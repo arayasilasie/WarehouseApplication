@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Inbox>
+  <InboxItem Name="Enter Grade Dispute">
+    <TransactionCode FlowName="WRCGD"  StepName="AddGradeDispute" Right="WHAGD" Step="0"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Make Decision">
+    <TransactionCode FlowName="WRCGD"  StepName="EditGradeDispute" Right="WHAppGD" Step="1"></TransactionCode>
+  </InboxItem>
+</Inbox>

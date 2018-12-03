@@ -1,0 +1,1777 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SecurityResourceConfiguration>
+
+  <SecuredResourceContainers>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchSamplingTicket.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditSampling.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnNext">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/InsertDriverInformation.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnComplete">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/InsertVoucherInformation.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnNext">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIGetSamplingTicketById.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnGenerateSampleTicket">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIGetGradingCode.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnGenerateCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddGradingRecived.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAcceptGradingResult.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboAcceptanceStatus">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddUnloading.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddScalingInformation.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGRNType">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIClientAcceptGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboStatus">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="ContentPage" Name="/Arrival.aspx">
+      <SecuredResources>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="MasterPage" Name="/MySite.Master">
+      <SecuredResources>
+        <SecuredResource Scope="Menu1" Name="Home">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Selectable" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Selectable" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/TheControl.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="LinkButton1">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditCommodityDepositrequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchScaling.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="True" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="True" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="ContentPage" Name="/ListGIN.aspx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnDriverInfo">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="True" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnLoadingInfo">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="True" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnScalingInfo">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="True" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddRequestforEditGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddCommodityGradeGradingFactor.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddGradeDispute.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddGradingRecived.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGRNType">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIMoistureResamplingRequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddSamplingResult.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnNext">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdRemove">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdPrint">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboSampleCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="pnlManagerApproval">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="true" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddScalingInformation.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddStack.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddUnloading.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboGradingCode">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/InsertVoucherInformation.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnNext">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UICancelGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnCancel">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditApprovedGRNCancelRequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditApprovedGRNEditRequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditCommodityDepositrequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditGradeDispute.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditGradingReceived.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnUpdate">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditMoisstureReSamplingRequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditSamplingResult.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="False" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditScaling.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditUnloading.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIGetSamplingTicketById.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnGenerateSampleTicket">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAcceptGradingResult.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboAcceptanceStatus">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIClientAcceptGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIGetGradingResults.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdCA">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchGrading.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdView">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdPrint">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdCancel">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIListRequestCancelForApprovedGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIListRequestEditForApprovedGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISamplingResultSearch.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdPrint">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchStack.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchUnloadingInformation.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIOpenGRNEdit.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIReCreateGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddApprovedGRNCancelationRequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="True" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchResampling.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UISearchScaling.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSearch">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cboStatus">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Enabled" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Enabled" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddApprovedGRNCancelationRequest.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UICancelGRN.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnCancel">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+      <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAbsentTrucks.ascx">
+        <SecuredResources>
+          <SecuredResource Scope="" Name="cmdEdit">
+            <ConfigurationOptions>
+              <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+              <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+            </ConfigurationOptions>
+          </SecuredResource>
+        </SecuredResources>
+      </SecuredResourceContainer>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIGradingFactors.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnAdd">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+        <SecuredResource Scope="" Name="cmdEdit">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddGradingFactorGroup.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIAddCommodityGradingFactor.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIConfirmTrucks.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnConform">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIReceiveSampleCode.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+    <SecuredResourceContainer type="UserControl" Name="/UserControls/UIEditCGTotalValue.ascx">
+      <SecuredResources>
+        <SecuredResource Scope="" Name="btnSave">
+          <ConfigurationOptions>
+            <ConfigurationOption OptionId="0" Property="Visible" Value="False" Level="0"/>
+            <ConfigurationOption OptionId="1" Property="Visible" Value="True" Level="1"/>
+          </ConfigurationOptions>
+        </SecuredResource>
+      </SecuredResources>
+    </SecuredResourceContainer>
+  </SecuredResourceContainers>
+
+  <SecurityRoles>
+    <SecurityRole Name="WHRCDR">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/PreArrival.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/AddArrival.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>  
+    <!--
+    <SecurityRole Name="WHRDI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/Test1.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/AddDriverInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/InsertDriverInformation.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="btnComplete" Option="1"/>
+            <GrantedResource Scope="" Name="btnEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    
+    <SecurityRole Name="WHRVI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddVoucherInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/InsertVoucherInformation.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="btnNext" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    -->
+    <SecurityRole Name="WHRST">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/GetSampleTicketNew.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRSR">
+      <GrantedResourceContainers>
+        <!--
+        <GrantedResourceContainer Name="/UserControls/UIAddSamplingResult.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="btnNext" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+        <GrantedResourceContainer Name="/AddSamplingResult.aspx"></GrantedResourceContainer>
+        -->
+        <GrantedResourceContainer Name="/AddSamplingResultNew.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRGC">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/GenerateGrading.aspx"></GrantedResourceContainer>
+        <!--
+        <GrantedResourceContainer Name="/GenerateGradingCode.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIGetGradingCode.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnGenerateCode" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+        -->
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRGR">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddGradingResult.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddGradingRecived.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRGRA">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/GradingResultClientAcceptanceNew.aspx"></GrantedResourceContainer>
+<!--
+        <GrantedResourceContainer Name="/GradingResultClientAcceptance.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/rptGradingResultReport.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAcceptGradingResult.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="cboAcceptanceStatus" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+        -->
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRUI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddUnloadingNew.aspx"></GrantedResourceContainer>
+        <!--
+        <GrantedResourceContainer Name="/AddUnloadingInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddUnloading.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="cboGradingCode" Option="0"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+        --> 
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <!--
+    <SecurityRole Name="WHRSI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddScalingInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddScalingInformation.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+            <GrantedResource Scope="" Name="cboGradingCode" Option="0"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRCGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+            <GrantedResource Scope="" Name="cboGradingCode" Option="1"/>
+            <GrantedResource Scope="" Name="cboGRNType" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    <SecurityRole Name="WHRGRNA">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/GRNClientSign.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportGRNPreApproval.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/rptGRNPreApproval.cs"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/WarehouseReports.aspx"></GrantedResourceContainer>
+        <!--
+        <GrantedResourceContainer Name="/GRNAcceptance.aspx"></GrantedResourceContainer>        
+        <GrantedResourceContainer Name="/UserControls/UIClientAcceptGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+            <GrantedResource Scope="" Name="cboStatus" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+        -->
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <!--
+    <SecurityRole Name="WHRGRNAP">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/TrackingNumberCheck.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportGRNPreApproval.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/rptGRNPreApproval.cs"></GrantedResourceContainer>      
+        
+        <GrantedResourceContainer Name="/WarehouseReports.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    <!--GIN -->
+    <SecurityRole Name="WHPIC">
+      <GrantedResourceContainers>
+        
+        <GrantedResourceContainer Name="/SearchPickupNotice.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/GIN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/GINSearch.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/PickupNoticeExpiredList.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/GINApprovalReport.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/GINApprove.aspx"></GrantedResourceContainer>
+
+        
+
+
+
+        <!--
+        <GrantedResourceContainer Name="/VerifyGINAvailability.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/TruckLoading.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/TruckRegistration.aspx"></GrantedResourceContainer>
+        -->
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHPWM">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ManagerGINApprove.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/GINApprovalReport.aspx"></GrantedResourceContainer>
+        
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+ <!--   
+    <SecurityRole Name="WHPSO">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/TruckScaling.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportViewerForm.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHPGG">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/TruckScaling.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportViewerForm.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    <SecurityRole Name="WHPAV">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ClientAcknowledgeGIN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/PickupNoticeAcknowledged.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ListPickupNotice.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    
+    <SecurityRole Name="WHAppGD">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ApproveGradeDispute.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    <SecurityRole Name="WHPWT">
+      <GrantedResourceContainers>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHPostWT">
+      <GrantedResourceContainers>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    <SecurityRole Name="ListInbox">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListInboxNew.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ListInboxDetailNew.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/PageSwictherNew.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/SearchPage.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportViewer.aspx"></GrantedResourceContainer>
+        
+        <!--
+        <GrantedResourceContainer Name="/ListInbox.aspx"></GrantedResourceContainer> 
+        <GrantedResourceContainer Name="/ListInboxDetail.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ListSearchableInboxDetail.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/PageSwicther.aspx"></GrantedResourceContainer>
+        -->
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <!--
+    <SecurityRole Name="EditCommodityDepositRequest">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListCommodityDepositRequest.aspx"/>
+        <GrantedResourceContainer Name="/UserControls/SearchCommodityDepositRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHAppRS">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/SearchReSampling.aspx"/>
+        <GrantedResourceContainer Name="/EditReSampling.aspx"/>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHSUI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddCommodityDepositRequest.aspx">
+        </GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchScaling.ascx">
+          <GrantedResources>
+            <GrantedResource  Name="btnSearch" Option="1"/>
+            <GrantedResource  Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    -->
+    <SecurityRole Name="ApproveGINEditingReq">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ApproveGINEditRequest.aspx">
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHGEDI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditTruckInformation.aspx">
+        </GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ListGIN.aspx">
+          <GrantedResources>
+            <GrantedResource  Name="btnDriverInfo" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHGELI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditTruckLoading.aspx">
+        </GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ListGIN.aspx">
+          <GrantedResources>
+            <GrantedResource  Name="btnLoadingInfo" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHGESI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditTruckScaling.aspx">
+        </GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ListGIN.aspx">
+          <GrantedResources>
+            <GrantedResource  Name="btnScalingInfo" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="AddCommGradeFactors">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddCommodityGradeGradingFactor.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddCommodityGradeGradingFactor.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="AddAppGRNEditRequest">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddApprovedGRNEditRequest.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddRequestforEditGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="AddGradeDispute">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddGradeDispute.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddGradeDispute.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+  
+   
+    <!--<SecurityRole Name="AddMoistReSampling">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddMoistureReSampling.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIMoistureResamplingRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>-->
+    <!--<SecurityRole Name="WHRSR">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddSamplingResult.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddSamplingResult.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="btnNext" Option="1"/>
+            <GrantedResource Scope="" Name="cmdRemove" Option="1"/>
+            <GrantedResource Scope="" Name="cmdPrint" Option="1"/>
+            <GrantedResource Scope="" Name="cboSampleCode" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRSI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddScalingInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddScalingInformation.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+            <GrantedResource Scope="" Name="cboGradingCode" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>-->
+    <SecurityRole Name="WHAddStack">
+      <GrantedResourceContainers>
+        <!--<GrantedResourceContainer Name="/AddStack.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddStack.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>-->
+        <GrantedResourceContainer Name="/StackManagement.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/InventoryTransfering.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/InventoryControlAdjustment.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/InventoryControlAdjustmentApprove.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportInventoryTransfer.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/rptInventoryTransfer.cs"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ApproveInventoryTransfer.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/InventoryTransferWhenLICResign.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/InventoryTransferWhenLICResign.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportInvTransfer.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/rptInvTransferLICResign.cs"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ApproveInvTransferLICResign.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/AddPhysicalAdddress.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/ReportInventoryBalance.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/rptInventoryBalance.cs"></GrantedResourceContainer>
+
+      </GrantedResourceContainers>
+
+    </SecurityRole>
+    <!--<SecurityRole Name="WHCancelGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/CancelGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UICancelGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnCancel" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRReqAppGRNCan">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditApprovedGRNCancelRequest.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditApprovedGRNCancelRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHAppGRNEd">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditApprovedGRNEditRequest.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditApprovedGRNEditRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>-->
+    <SecurityRole Name="EditCommodityDeposit">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditCommodityDepositRequest.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditCommodityDepositrequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHEditGradeDispute">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditGradeDispute.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditGradeDispute.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHEditGradeReceived">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditGradingReceived.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditGradingReceived.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnUpdate" Option="1"/>
+            <GrantedResource Scope="" Name="btnEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHEditReSampling">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditReSampling.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditMoisstureReSamplingRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHEditSamplingResult">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditSamplingResult.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditSamplingResult.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHEditScaling">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditScaling.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditScaling.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHEditUnloading">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditUnloadingInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditUnloading.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRGC">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/GenerateGradingCode.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIGetGradingCode.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnGenerateCode" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+
+
+    <!--
+    <SecurityRole Name="WHListGradeResult">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListGradingResult.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIGetGradingResults.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+            <GrantedResource Scope="" Name="cmdCA" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListGrading">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListGrading.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchGrading.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+            <GrantedResource Scope="" Name="cmdView" Option="1"/>
+            <GrantedResource Scope="" Name="cmdPrint" Option="1"/>
+            <GrantedResource Scope="" Name="cmdCancel" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListReqCaAppGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListRequestCancelForApprovedGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIListRequestCancelForApprovedGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListReqEditAppGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListRequestEditForApprovedGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIListRequestEditForApprovedGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHLsitSamplingResult">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListSamplingResult.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISamplingResultSearch.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+            <GrantedResource Scope="" Name="cmdPrint" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListStack">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListStack.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchStack.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+            <GrantedResource Scope="" Name="cmdPrint" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListUnloading">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListUnloadingInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchUnloadingInformation.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHOpenGRNEd">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/OpenGRNEdit.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIOpenGRNEdit.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRSI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/PostWeighTruck.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHRUI">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/PreWeighTruck.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHReCreateGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ReCreateGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIReCreateGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHReportSampleTicket">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ReportSampleTicket.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHReportSamplingRes">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ReportSamplingResult.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    <!-- Arrival Print
+    <SecurityRole Name="WHReportTrackingNo">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ReportTrackingNumber.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    <SecurityRole Name="WHAddAppGRNCanlReq">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/RequestApprovedGRNCancelation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddApprovedGRNCancelationRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHGradingCode">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/rptCoffeeCode.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHPrintGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/rptGRN.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListReSampling">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/SearchReSampling.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchResampling.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHListScaling">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/SearchScalingInformation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UISearchScaling.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSearch" Option="1"/>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHViewEditGRN">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ViewGRN.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIEditGRN.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+            <GrantedResource Scope="" Name="cboStatus" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIConfirmTrucks.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnConform" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHAlwTruckMisReCon">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/EditTrucksMissingStatus.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAbsentTrucks.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="cmdEdit" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    
+    <SecurityRole Name="Weigher">
+    </SecurityRole>
+    <SecurityRole Name="Sampler">
+    </SecurityRole>
+    <SecurityRole Name="Grader">
+    </SecurityRole>
+    <SecurityRole Name="LIC">
+    </SecurityRole>
+    
+    <SecurityRole Name="InventoryController">
+    </SecurityRole>
+    <SecurityRole Name="Loader">
+    </SecurityRole>
+    <SecurityRole Name="VerifyingClerk">
+    </SecurityRole>
+    <SecurityRole Name="WHGetTrucksSam">
+    </SecurityRole>
+    <SecurityRole Name="WHConfTruckSamp">
+    </SecurityRole>
+    
+    <!--
+    <SecurityRole Name="WHRReqAppGRNCan">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/RequestApprovedGRNCancelation.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddApprovedGRNCancelationRequest.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="GradingFactor">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddGradingFactor.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIGradingFactors.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnAdd" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHGradingFactorGroup">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddGradingFactorGroup.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddGradingFactorGroup.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHCommGF">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/AddCommodityGradingFactor.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIAddCommodityGradingFactor.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    
+    <SecurityRole Name="WHPRTLC">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/TruckLeftCompound.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="Gatekeeper">
+    </SecurityRole>
+    
+    <!--<SecurityRole Name="WHCodeSampRec">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ReceiveSampleCode.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIReceiveSampleCode.ascx">
+          <GrantedResources>
+            <GrantedResource Scope="" Name="btnSave" Option="1"/>
+          </GrantedResources>
+        </GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHPCT">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ListPhysicalCount.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/TakePhysicalCount.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    <SecurityRole Name="WHAppGRNEd">
+    </SecurityRole>
+    <SecurityRole Name="WHOpenGRNEd">
+    </SecurityRole>
+    <SecurityRole Name="WHEditAppGRN">
+    </SecurityRole>-->
+    
+    <SecurityRole Name="WHSupervisor">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/ReportGRNPreApproval.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/GRNApprovalSup.aspx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    
+    <!--
+    <SecurityRole Name="WHUpdateGRNNo">
+      <GrantedResourceContainers>
+        <GrantedResourceContainer Name="/UpdateGRNNumber.aspx"></GrantedResourceContainer>
+        <GrantedResourceContainer Name="/UserControls/UIUpdateGRNNumber.ascx"></GrantedResourceContainer>
+      </GrantedResourceContainers>
+    </SecurityRole>
+    -->
+    
+    <SecurityRole Name="WHAdmin">
+    <GrantedResourceContainers>
+      <GrantedResourceContainer Name="/PSAApprove.aspx"></GrantedResourceContainer>
+      <GrantedResourceContainer Name="/ManagerPSAApprove.aspx"></GrantedResourceContainer>
+      <GrantedResourceContainer Name="/WarehouseOperators.aspx"></GrantedResourceContainer>
+      <GrantedResourceContainer Name="/SearchCGTotalValueEdit.aspx"></GrantedResourceContainer>
+      <GrantedResourceContainer Name="/UserControls/UIEditCGTotalValue.ascx">
+        <GrantedResource Scope="" Name="btnSave" Option="1"/>
+      </GrantedResourceContainer>
+    </GrantedResourceContainers>
+  </SecurityRole>
+  </SecurityRoles>
+</SecurityResourceConfiguration>

@@ -1,0 +1,3054 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ED64898-5EC2-4D3A-B106-50F57D3C8A5E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WarehouseApplication</RootNamespace>
+    <AssemblyName>WarehouseApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ActiveReports.Chart, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Design6, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.Design6.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Document, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.HtmlExport, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.HtmlExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.PdfExport, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.PdfExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer6, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.Viewer6.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Web, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Web.Design, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.XlsExport, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="ActiveReports6, Version=6.0.2250.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>D:\Softwares\ActiveReport dlls\ActiveReports6.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.30637, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ECXControlsCollection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Asset ECX\ECXControlsCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <HintPath>..\..\..\Asset ECX\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlXml, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applications\WarehouseApplication\Microsoft.Data.SqlXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddApprovedGRNEditRequest.aspx.cs">
+      <DependentUpon>AddApprovedGRNEditRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddApprovedGRNEditRequest.aspx.designer.cs">
+      <DependentUpon>AddApprovedGRNEditRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddArrival.aspx.cs">
+      <DependentUpon>AddArrival.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddArrival.aspx.designer.cs">
+      <DependentUpon>AddArrival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCommodityDepositRequest.aspx.cs">
+      <DependentUpon>AddCommodityDepositRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCommodityDepositRequest.aspx.designer.cs">
+      <DependentUpon>AddCommodityDepositRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCommodityGradeGradingFactor.aspx.cs">
+      <DependentUpon>AddCommodityGradeGradingFactor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCommodityGradeGradingFactor.aspx.designer.cs">
+      <DependentUpon>AddCommodityGradeGradingFactor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCommodityGradingFactor.aspx.cs">
+      <DependentUpon>AddCommodityGradingFactor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCommodityGradingFactor.aspx.designer.cs">
+      <DependentUpon>AddCommodityGradingFactor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddDriverInformation.aspx.cs">
+      <DependentUpon>AddDriverInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDriverInformation.aspx.designer.cs">
+      <DependentUpon>AddDriverInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGradeDispute.aspx.cs">
+      <DependentUpon>AddGradeDispute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGradeDispute.aspx.designer.cs">
+      <DependentUpon>AddGradeDispute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGradingFactor.aspx.cs">
+      <DependentUpon>AddGradingFactor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGradingFactor.aspx.designer.cs">
+      <DependentUpon>AddGradingFactor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGradingFactorGroup.aspx.cs">
+      <DependentUpon>AddGradingFactorGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGradingFactorGroup.aspx.designer.cs">
+      <DependentUpon>AddGradingFactorGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGradingResult.aspx.cs">
+      <DependentUpon>AddGradingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGradingResult.aspx.designer.cs">
+      <DependentUpon>AddGradingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGradingResultNew.aspx.cs">
+      <DependentUpon>AddGradingResultNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGradingResultNew.aspx.designer.cs">
+      <DependentUpon>AddGradingResultNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddGRN.aspx.cs">
+      <DependentUpon>AddGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGRN.aspx.designer.cs">
+      <DependentUpon>AddGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMoistureReSampling.aspx.cs">
+      <DependentUpon>AddMoistureReSampling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMoistureReSampling.aspx.designer.cs">
+      <DependentUpon>AddMoistureReSampling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhysicalAdddress.aspx.cs">
+      <DependentUpon>AddPhysicalAdddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPhysicalAdddress.aspx.designer.cs">
+      <DependentUpon>AddPhysicalAdddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSamplingResult.aspx.cs">
+      <DependentUpon>AddSamplingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSamplingResult.aspx.designer.cs">
+      <DependentUpon>AddSamplingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSamplingResultNew.aspx.cs">
+      <DependentUpon>AddSamplingResultNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSamplingResultNew.aspx.designer.cs">
+      <DependentUpon>AddSamplingResultNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddScalingInformation.aspx.cs">
+      <DependentUpon>AddScalingInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddScalingInformation.aspx.designer.cs">
+      <DependentUpon>AddScalingInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStack.aspx.cs">
+      <DependentUpon>AddStack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStack.aspx.designer.cs">
+      <DependentUpon>AddStack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUnloadingNew.aspx.cs">
+      <DependentUpon>AddUnloadingNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUnloadingNew.aspx.designer.cs">
+      <DependentUpon>AddUnloadingNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVoucherInformation.aspx.cs">
+      <DependentUpon>AddVoucherInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVoucherInformation.aspx.designer.cs">
+      <DependentUpon>AddVoucherInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveGIN.aspx.cs">
+      <DependentUpon>ApproveGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveGIN.aspx.designer.cs">
+      <DependentUpon>ApproveGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveGINEditRequest.aspx.cs">
+      <DependentUpon>ApproveGINEditRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveGINEditRequest.aspx.designer.cs">
+      <DependentUpon>ApproveGINEditRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveGradeDispute.aspx.cs">
+      <DependentUpon>ApproveGradeDispute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveGradeDispute.aspx.designer.cs">
+      <DependentUpon>ApproveGradeDispute.aspx</DependentUpon>
+    </Compile>
+    <Content Include="1divHeaderBg.png" />
+    <Content Include="AddArrival.aspx" />
+    <Content Include="AddGradingResultNew.aspx" />
+    <Content Include="AddPhysicalAdddress.aspx" />
+    <Content Include="AddSamplingResultNew.aspx" />
+    <Content Include="AddUnloadingNew.aspx" />
+    <Content Include="ApproveInventoryTransfer.aspx" />
+    <Content Include="ApproveInvTransferLICResign.aspx" />
+    <Content Include="App_Code\StackCountSource.cs" />
+    <Compile Include="ApproveInventoryTransfer.aspx.cs">
+      <DependentUpon>ApproveInventoryTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveInventoryTransfer.aspx.designer.cs">
+      <DependentUpon>ApproveInventoryTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveInvTransferLICResign.aspx.cs">
+      <DependentUpon>ApproveInvTransferLICResign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveInvTransferLICResign.aspx.designer.cs">
+      <DependentUpon>ApproveInvTransferLICResign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignShed.aspx.cs">
+      <DependentUpon>AssignShed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignShed.aspx.designer.cs">
+      <DependentUpon>AssignShed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BLL\ArrivalModel.cs" />
+    <Compile Include="BLL\AuditTrailBLL.cs" />
+    <Compile Include="BLL\BagTypeBLL.cs" />
+    <Compile Include="BLL\BaseModel.cs" />
+    <Compile Include="BLL\CachableBase.cs" />
+    <Compile Include="BLL\ClientBLL.cs" />
+    <Compile Include="BLL\CommodityGradeBLL.cs" />
+    <Compile Include="BLL\CommodityDepositeRequestBLL.cs" />
+    <Compile Include="BLL\CommodityGradeFactorValueBLL.cs" />
+    <Compile Include="BLL\CommodityGradeTotalValueBLL.cs" />
+    <Compile Include="BLL\Common.cs" />
+    <Compile Include="BLL\DailyLabourerAssociation.cs" />
+    <Compile Include="BLL\DataValidationBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\EmployeeBLL.cs" />
+    <Compile Include="BLL\ExpiredConsignment.cs" />
+    <Compile Include="BLL\GeneralBLL.cs" />
+    <Compile Include="BLL\GradingBLL.cs" />
+    <Compile Include="BLL\GradingByBLL.cs" />
+    <Compile Include="BLL\GradingByCollection.cs" />
+    <Compile Include="BLL\GradingDisputeBLL.cs" />
+    <Compile Include="BLL\GradingFactorBLL.cs" />
+    <Compile Include="BLL\GradingFactorGroupBLL.cs" />
+    <Compile Include="BLL\GradingFactorTypeId.cs" />
+    <Compile Include="BLL\GradingResultDetailBLL.cs" />
+    <Compile Include="BLL\GradingResultBLL.cs" />
+    <Compile Include="BLL\GRNApprovalModel.cs" />
+    <Compile Include="BLL\GRNBLL.cs" />
+    <Compile Include="BLL\GRNCancellationModel.cs" />
+    <Compile Include="BLL\GRNListBLL.cs" />
+    <Compile Include="BLL\GRNSentBLL.cs" />
+    <Compile Include="BLL\GRNServiceBLL.cs" />
+    <Compile Include="BLL\GRNTypeBLL.cs" />
+    <Compile Include="BLL\GRN_BL.cs" />
+    <Compile Include="BLL\InboxModel.cs" />
+    <Compile Include="BLL\InventoryControlAdjustmentModel.cs" />
+    <Compile Include="BLL\InventoryTransferModel.cs" />
+    <Compile Include="BLL\LookupModel.cs" />
+    <Compile Include="BLL\ModelCommoditySymbol.cs" />
+    <Compile Include="BLL\ModelGIN.cs" />
+    <Compile Include="BLL\ModelGrading.cs" />
+    <Compile Include="BLL\ModelLocation.cs" />
+    <Compile Include="BLL\ModelWRNO.cs" />
+    <Compile Include="BLL\NIDTypeBLL.cs" />
+    <Compile Include="BLL\PhysicalAdddressModel.cs" />
+    <Compile Include="BLL\PickupNoticeModel.cs" />
+    <Compile Include="BLL\RequestforApprovedGRNCancelationBLL.cs" />
+    <Compile Include="BLL\RequestforEditGRNBLL.cs" />
+    <Compile Include="BLL\rptArrivalToDepositeBLL.cs" />
+    <Compile Include="BLL\SamplerAttendaceModel.cs" />
+    <Compile Include="BLL\SamplerReassignmentModel.cs" />
+    <Compile Include="BLL\SamplingModel.cs" />
+    <Compile Include="BLL\SessionKey.cs" />
+    <Compile Include="BLL\SLABLL.cs" />
+    <Compile Include="BLL\SQLHelper.cs" />
+    <Compile Include="BLL\StackModel.cs" />
+    <Compile Include="BLL\StackTransactionModel.cs" />
+    <Compile Include="BLL\TrucksForSamplingBLL.cs" />
+    <Compile Include="BLL\TrucksMissingOnSamplingBLL.cs" />
+    <Compile Include="BLL\TruckTypeBLL.cs" />
+    <Compile Include="BLL\UserRightBLL.cs" />
+    <Compile Include="BLL\Inbox.cs" />
+    <Compile Include="BLL\InboxItems.cs" />
+    <Compile Include="BLL\ReSamplingBLL.cs" />
+    <Compile Include="BLL\SamplerBLL.cs" />
+    <Compile Include="BLL\SamplingBLL.cs" />
+    <Compile Include="BLL\SamplingResultBLL.cs" />
+    <Compile Include="BLL\ScalingBLL.cs" />
+    <Compile Include="BLL\ShedBLL.cs" />
+    <Compile Include="BLL\StackBLL.cs" />
+    <Compile Include="BLL\StackUnloadedBLL.cs" />
+    <Compile Include="BLL\TransactionTypeProvider.cs" />
+    <Compile Include="BLL\UnloadingBLL.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="BLL\Utility.cs" />
+    <Compile Include="BLL\VoucherInformationBLL.cs" />
+    <Compile Include="BLL\WarehouseApplicationConfiguration.cs" />
+    <Compile Include="BLL\DriverInformationBLL.cs" />
+    <Compile Include="BLL\ErrorLogger.cs" />
+    <Compile Include="BLL\WarehouseBaseModel.cs" />
+    <Compile Include="BLL\WarehouseBLL.cs" />
+    <Compile Include="BLL\WarehouseExceptions.cs" />
+    <Compile Include="BLL\WarehouseOperator.cs" />
+    <Compile Include="BLL\WarehouseRecieptBLL.cs" />
+    <Compile Include="BLL\WarehouseServicesBLL.cs" />
+    <Compile Include="BLL\WarehouseTrackingNoBLL.cs" />
+    <Compile Include="BLL\WFTransaction.cs" />
+    <Compile Include="BLL\WoredaBLL.cs" />
+    <Compile Include="CancelGRN.aspx.cs">
+      <DependentUpon>CancelGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelGRN.aspx.designer.cs">
+      <DependentUpon>CancelGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CDDTrackRegistration.asmx.cs">
+      <DependentUpon>CDDTrackRegistration.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClientAcknowledgeGIN.aspx.cs">
+      <DependentUpon>ClientAcknowledgeGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAcknowledgeGIN.aspx.designer.cs">
+      <DependentUpon>ClientAcknowledgeGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientTest.asmx.cs">
+      <DependentUpon>ClientTest.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CloseInboxDetail.aspx.cs">
+      <DependentUpon>CloseInboxDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseInboxDetail.aspx.designer.cs">
+      <DependentUpon>CloseInboxDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmTrucksForSampling.aspx.cs">
+      <DependentUpon>ConfirmTrucksForSampling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmTrucksForSampling.aspx.designer.cs">
+      <DependentUpon>ConfirmTrucksForSampling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsignmentExpiryList.aspx.cs">
+      <DependentUpon>ConsignmentExpiryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsignmentExpiryList.aspx.designer.cs">
+      <DependentUpon>ConsignmentExpiryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyArrivalReport.aspx.cs">
+      <DependentUpon>DailyArrivalReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyArrivalReport.aspx.designer.cs">
+      <DependentUpon>DailyArrivalReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyDeliveryReport.aspx.cs">
+      <DependentUpon>DailyDeliveryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyDeliveryReport.aspx.designer.cs">
+      <DependentUpon>DailyDeliveryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyDepositReport.aspx.cs">
+      <DependentUpon>DailyDepositReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyDepositReport.aspx.designer.cs">
+      <DependentUpon>DailyDepositReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyPSAReport.aspx.cs">
+      <DependentUpon>DailyPSAReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyPSAReport.aspx.designer.cs">
+      <DependentUpon>DailyPSAReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetShed1.Designer.cs" />
+    <Compile Include="EditConsignment.aspx.cs">
+      <DependentUpon>EditConsignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditConsignment.aspx.designer.cs">
+      <DependentUpon>EditConsignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditGRN.aspx.cs">
+      <DependentUpon>EditGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGRN.aspx.designer.cs">
+      <DependentUpon>EditGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditSamplerAttendance.aspx.cs">
+      <DependentUpon>EditSamplerAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditSamplerAttendance.aspx.designer.cs">
+      <DependentUpon>EditSamplerAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnablePUNPrint.aspx.cs">
+      <DependentUpon>EnablePUNPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnablePUNPrint.aspx.designer.cs">
+      <DependentUpon>EnablePUNPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateGrading.aspx.cs">
+      <DependentUpon>GenerateGrading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateGrading.aspx.designer.cs">
+      <DependentUpon>GenerateGrading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetSampleTicket.aspx.cs">
+      <DependentUpon>GetSampleTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetSampleTicket.aspx.designer.cs">
+      <DependentUpon>GetSampleTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetSampleTicketNew.aspx.cs">
+      <DependentUpon>GetSampleTicketNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetSampleTicketNew.aspx.designer.cs">
+      <DependentUpon>GetSampleTicketNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GIN.aspx.cs">
+      <DependentUpon>GIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GIN.aspx.designer.cs">
+      <DependentUpon>GIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINApprovalReport.aspx.cs">
+      <DependentUpon>GINApprovalReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINApprovalReport.aspx.designer.cs">
+      <DependentUpon>GINApprovalReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINApprove.aspx.cs">
+      <DependentUpon>GINApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINApprove.aspx.designer.cs">
+      <DependentUpon>GINApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINPSA.aspx.cs">
+      <DependentUpon>GINPSA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINPSA.aspx.designer.cs">
+      <DependentUpon>GINPSA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradingResult.aspx.cs">
+      <DependentUpon>GradingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradingResult.aspx.designer.cs">
+      <DependentUpon>GradingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataAccessPoint.cs" />
+    <Compile Include="GradingResultClientAcceptanceNew.aspx.cs">
+      <DependentUpon>GradingResultClientAcceptanceNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradingResultClientAcceptanceNew.aspx.designer.cs">
+      <DependentUpon>GradingResultClientAcceptanceNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRNApproval.aspx.cs">
+      <DependentUpon>GRNApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRNApproval.aspx.designer.cs">
+      <DependentUpon>GRNApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRNApprovalSup.aspx.cs">
+      <DependentUpon>GRNApprovalSup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRNApprovalSup.aspx.designer.cs">
+      <DependentUpon>GRNApprovalSup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRNApprovalSupervisor.aspx.cs">
+      <DependentUpon>GRNApprovalSupervisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRNApprovalSupervisor.aspx.designer.cs">
+      <DependentUpon>GRNApprovalSupervisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRNCancellationRequest.aspx.cs">
+      <DependentUpon>GRNCancellationRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRNCancellationRequest.aspx.designer.cs">
+      <DependentUpon>GRNCancellationRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRNClientSign.aspx.cs">
+      <DependentUpon>GRNClientSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRNClientSign.aspx.designer.cs">
+      <DependentUpon>GRNClientSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImportWareHouseReceipt.aspx.cs">
+      <DependentUpon>ImportWareHouseReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportWareHouseReceipt.aspx.designer.cs">
+      <DependentUpon>ImportWareHouseReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryControlAdjustment.aspx.cs">
+      <DependentUpon>InventoryControlAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryControlAdjustment.aspx.designer.cs">
+      <DependentUpon>InventoryControlAdjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryControlAdjustmentApprove.aspx.cs">
+      <DependentUpon>InventoryControlAdjustmentApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryControlAdjustmentApprove.aspx.designer.cs">
+      <DependentUpon>InventoryControlAdjustmentApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTransfering.aspx.cs">
+      <DependentUpon>InventoryTransfering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryTransfering.aspx.designer.cs">
+      <DependentUpon>InventoryTransfering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTransferWhenLICResign.aspx.cs">
+      <DependentUpon>InventoryTransferWhenLICResign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryTransferWhenLICResign.aspx.designer.cs">
+      <DependentUpon>InventoryTransferWhenLICResign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListInboxDetailNew.aspx.cs">
+      <DependentUpon>ListInboxDetailNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListInboxDetailNew.aspx.designer.cs">
+      <DependentUpon>ListInboxDetailNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListInboxNew.aspx.cs">
+      <DependentUpon>ListInboxNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListInboxNew.aspx.designer.cs">
+      <DependentUpon>ListInboxNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListInboxNew2.aspx.cs">
+      <DependentUpon>ListInboxNew2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListInboxNew2.aspx.designer.cs">
+      <DependentUpon>ListInboxNew2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLocations.aspx.cs">
+      <DependentUpon>ManageLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageLocations.aspx.designer.cs">
+      <DependentUpon>ManageLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DALManager\CommonIdentifiers.cs" />
+    <Compile Include="DALManager\DALManager.cs" />
+    <Compile Include="DALManager\IdandFilter.cs" />
+    <Compile Include="DALManager\Interfaces.cs" />
+    <Compile Include="DALManager\PersistenceOperator.cs" />
+    <Compile Include="DALManager\SQLDataCatalogSource.cs" />
+    <Compile Include="DALManager\SQLXmlCatalogSource.cs" />
+    <Compile Include="DALManager\Utility.cs" />
+    <Compile Include="DAL\Client.cs" />
+    <Compile Include="DAL\CoffeeType.cs" />
+    <Compile Include="DAL\CommodityDepositRequest.cs" />
+    <Compile Include="DAL\CommodityGradeDAL.cs" />
+    <Compile Include="DAL\CommodityGradeFactorValueDAL.cs" />
+    <Compile Include="DAL\CommodityGradeTotalValueDAL.cs" />
+    <Compile Include="DAL\Connection.cs" />
+    <Compile Include="DAL\DatabaseHelper.cs" />
+    <Compile Include="DAL\DriverInformation.cs" />
+    <Compile Include="DAL\EmployeeAttendanceDAL.cs" />
+    <Compile Include="DAL\GradingByDAL.cs" />
+    <Compile Include="DAL\GradingDAL.cs" />
+    <Compile Include="DAL\GradingDisputeDAL.cs" />
+    <Compile Include="DAL\GradingFactorDAL.cs" />
+    <Compile Include="DAL\GradingFactorGroupDAL.cs" />
+    <Compile Include="DAL\GradingResultDAL.cs" />
+    <Compile Include="DAL\GradingResultDetailDAL.cs" />
+    <Compile Include="DAL\GRNDAL.cs" />
+    <Compile Include="DAL\GRNSentDAL.cs" />
+    <Compile Include="DAL\GRNServiceDAL.cs" />
+    <Compile Include="DAL\GRNTypeDAL.cs" />
+    <Compile Include="DAL\InboxCountDAL.cs" />
+    <Compile Include="DAL\LookUp.cs" />
+    <Compile Include="DAL\RequestforApprovedGRNCancelationDAL.cs" />
+    <Compile Include="DAL\RequestforEditGRNDAL.cs" />
+    <Compile Include="DAL\ReSamplingDAL.cs" />
+    <Compile Include="DAL\Role.cs" />
+    <Compile Include="DAL\rptArrivalToDepositeDAL.cs" />
+    <Compile Include="DAL\SLADAL.cs" />
+    <Compile Include="DAL\TrucksMissingOnSamplingDAL.cs" />
+    <Compile Include="DAL\SamplerDAL.cs" />
+    <Compile Include="DAL\SamplingDAL.cs" />
+    <Compile Include="DAL\SamplingResultDAL.cs" />
+    <Compile Include="DAL\ScalingDAL.cs" />
+    <Compile Include="DAL\StackDAL.cs" />
+    <Compile Include="DAL\StackUnloadedDAL.cs" />
+    <Compile Include="DAL\TrucksForSamplingDAL.cs" />
+    <Compile Include="DAL\TruckTypeDAL.cs" />
+    <Compile Include="DAL\UnloadingDAL.cs" />
+    <Compile Include="DAL\Voucher.cs" />
+    <Compile Include="DAL\WarehouseTrackingNoDAL.cs" />
+    <Compile Include="ECXWarehousePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditApprovedGRNCancelRequest.aspx.cs">
+      <DependentUpon>EditApprovedGRNCancelRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditApprovedGRNCancelRequest.aspx.designer.cs">
+      <DependentUpon>EditApprovedGRNCancelRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditApprovedGRNEditRequest.aspx.cs">
+      <DependentUpon>EditApprovedGRNEditRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditApprovedGRNEditRequest.aspx.designer.cs">
+      <DependentUpon>EditApprovedGRNEditRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCommodityDepositeRequest.aspx.cs">
+      <DependentUpon>EditCommodityDepositeRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCommodityDepositeRequest.aspx.designer.cs">
+      <DependentUpon>EditCommodityDepositeRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCommodityDepositRequest.aspx.cs">
+      <DependentUpon>EditCommodityDepositRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCommodityDepositRequest.aspx.designer.cs">
+      <DependentUpon>EditCommodityDepositRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditGradeDispute.aspx.cs">
+      <DependentUpon>EditGradeDispute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGradeDispute.aspx.designer.cs">
+      <DependentUpon>EditGradeDispute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditGradingReceived.aspx.cs">
+      <DependentUpon>EditGradingReceived.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGradingReceived.aspx.designer.cs">
+      <DependentUpon>EditGradingReceived.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditGradingResult.aspx.cs">
+      <DependentUpon>EditGradingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGradingResult.aspx.designer.cs">
+      <DependentUpon>EditGradingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditTrucksMissingStatus.aspx.cs">
+      <DependentUpon>EditTrucksMissingStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditTrucksMissingStatus.aspx.designer.cs">
+      <DependentUpon>EditTrucksMissingStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetTrucksReadyForSampling.aspx.cs">
+      <DependentUpon>GetTrucksReadyForSampling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetTrucksReadyForSampling.aspx.designer.cs">
+      <DependentUpon>GetTrucksReadyForSampling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINLogic\GINAuditController.cs" />
+    <Compile Include="GINLogic\InventoryServices.cs" />
+    <Compile Include="GINMaster.Master.cs">
+      <DependentUpon>GINMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINMaster.Master.designer.cs">
+      <DependentUpon>GINMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GRNWRSync.asmx.cs">
+      <DependentUpon>GRNWRSync.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListGrading.aspx.cs">
+      <DependentUpon>ListGrading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListGrading.aspx.designer.cs">
+      <DependentUpon>ListGrading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListPhysicalCount.aspx.cs">
+      <DependentUpon>ListPhysicalCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListPhysicalCount.aspx.designer.cs">
+      <DependentUpon>ListPhysicalCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListRequestCancelForApprovedGRN.aspx.cs">
+      <DependentUpon>ListRequestCancelForApprovedGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListRequestCancelForApprovedGRN.aspx.designer.cs">
+      <DependentUpon>ListRequestCancelForApprovedGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListRequestEditForApprovedGRN.aspx.cs">
+      <DependentUpon>ListRequestEditForApprovedGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListRequestEditForApprovedGRN.aspx.designer.cs">
+      <DependentUpon>ListRequestEditForApprovedGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListSearchableInboxDetail.aspx.cs">
+      <DependentUpon>ListSearchableInboxDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListSearchableInboxDetail.aspx.designer.cs">
+      <DependentUpon>ListSearchableInboxDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerGINApprove.aspx.cs">
+      <DependentUpon>ManagerGINApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerGINApprove.aspx.designer.cs">
+      <DependentUpon>ManagerGINApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerPSAApprove.aspx.cs">
+      <DependentUpon>ManagerPSAApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerPSAApprove.aspx.designer.cs">
+      <DependentUpon>ManagerPSAApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapingCommodityClassGrade.aspx.cs">
+      <DependentUpon>MapingCommodityClassGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapingCommodityClassGrade.aspx.designer.cs">
+      <DependentUpon>MapingCommodityClassGrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.ascx.cs">
+      <DependentUpon>Messages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messages.ascx.designer.cs">
+      <DependentUpon>Messages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenGRNEdit.aspx.cs">
+      <DependentUpon>OpenGRNEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpenGRNEdit.aspx.designer.cs">
+      <DependentUpon>OpenGRNEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageSwictherNew.aspx.cs">
+      <DependentUpon>PageSwictherNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageSwictherNew.aspx.designer.cs">
+      <DependentUpon>PageSwictherNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickupNoticeExpiredList.aspx.cs">
+      <DependentUpon>PickupNoticeExpiredList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickupNoticeExpiredList.aspx.designer.cs">
+      <DependentUpon>PickupNoticeExpiredList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickupNoticeExpiredListAdmin.aspx.cs">
+      <DependentUpon>PickupNoticeExpiredListAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickupNoticeExpiredListAdmin.aspx.designer.cs">
+      <DependentUpon>PickupNoticeExpiredListAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreArrival.aspx.cs">
+      <DependentUpon>PreArrival.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreArrival.aspx.designer.cs">
+      <DependentUpon>PreArrival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\PreArrival.cs" />
+    <Compile Include="PSAApprove.aspx.cs">
+      <DependentUpon>PSAApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PSAApprove.aspx.designer.cs">
+      <DependentUpon>PSAApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveSampleCode.aspx.cs">
+      <DependentUpon>ReceiveSampleCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReceiveSampleCode.aspx.designer.cs">
+      <DependentUpon>ReceiveSampleCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveSampleCodeNew.aspx.cs">
+      <DependentUpon>ReceiveSampleCodeNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReceiveSampleCodeNew.aspx.designer.cs">
+      <DependentUpon>ReceiveSampleCodeNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReCreateGRN.aspx.cs">
+      <DependentUpon>ReCreateGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReCreateGRN.aspx.designer.cs">
+      <DependentUpon>ReCreateGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGRNPreApproval.aspx.cs">
+      <DependentUpon>ReportGRNPreApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportGRNPreApproval.aspx.designer.cs">
+      <DependentUpon>ReportGRNPreApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportInventoryBalance.aspx.cs">
+      <DependentUpon>ReportInventoryBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportInventoryBalance.aspx.designer.cs">
+      <DependentUpon>ReportInventoryBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportInventoryTransfer.aspx.cs">
+      <DependentUpon>ReportInventoryTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportInventoryTransfer.aspx.designer.cs">
+      <DependentUpon>ReportInventoryTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportInvTransfer.aspx.cs">
+      <DependentUpon>ReportInvTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportInvTransfer.aspx.designer.cs">
+      <DependentUpon>ReportInvTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportStackBalance.aspx.cs">
+      <DependentUpon>ReportStackBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportStackBalance.aspx.designer.cs">
+      <DependentUpon>ReportStackBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GradingResultReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\GradingResultReport.Designer.cs">
+      <DependentUpon>GradingResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGenerate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGenerate.Designer.cs">
+      <DependentUpon>rptGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGradingFactorsResultReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGradingFactorsResultReport.designer.cs">
+      <DependentUpon>rptGradingFactorsResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGradingNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGradingNew.designer.cs">
+      <DependentUpon>rptGradingNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGRNnew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGRNnew.Designer.cs">
+      <DependentUpon>rptGRNnew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGRNPreApproval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGRNPreApproval.designer.cs">
+      <DependentUpon>rptGRNPreApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInventoryBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInventoryBalance.Designer.cs">
+      <DependentUpon>rptInventoryBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInventoryTransfer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInventoryTransfer.designer.cs">
+      <DependentUpon>rptInventoryTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptInvTransferLICResign.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptInvTransferLICResign.designer.cs">
+      <DependentUpon>rptInvTransferLICResign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptResultReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptResultReport.Designer.cs">
+      <DependentUpon>rptResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGrading.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGrading.Designer.cs">
+      <DependentUpon>rptGrading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGRN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGRN.Designer.cs">
+      <DependentUpon>rptGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGRNService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGRNService.Designer.cs">
+      <DependentUpon>rptGRNService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSampleTicketCoffeeNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSampleTicketCoffeeNew.Designer.cs">
+      <DependentUpon>rptSampleTicketCoffeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSegrigationGradingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSegrigationGradingReport.designer.cs">
+      <DependentUpon>rptSegrigationGradingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptStockBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptStockBalance.Designer.cs">
+      <DependentUpon>rptStockBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSubInvTransferDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSubInvTransferDetail.Designer.cs">
+      <DependentUpon>rptSubInvTransferDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTest.Designer.cs">
+      <DependentUpon>rptTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptWBServiceProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptWBServiceProvider.Designer.cs">
+      <DependentUpon>rptWBServiceProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptConsignment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptConsignment.designer.cs">
+      <DependentUpon>rptConsignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptGINApproval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptGINApproval.Designer.cs">
+      <DependentUpon>rptGINApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptGINReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptGINReport.Designer.cs">
+      <DependentUpon>rptGINReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptInspectionTestResult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptInspectionTestResult.Designer.cs">
+      <DependentUpon>rptInspectionTestResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptInspectionTestResultDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptInspectionTestResultDetail.Designer.cs">
+      <DependentUpon>rptInspectionTestResultDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptPickupNoticeExpiredList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptPickupNoticeExpiredList.designer.cs">
+      <DependentUpon>rptPickupNoticeExpiredList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptPSAReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptPSAReport.designer.cs">
+      <DependentUpon>rptPSAReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptPUNReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptPUNReport.designer.cs">
+      <DependentUpon>rptPUNReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptStackBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptStackBalance.Designer.cs">
+      <DependentUpon>rptStackBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSubGIN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSubGIN.Designer.cs">
+      <DependentUpon>rptSubGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSUBGINScale.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSUBGINScale.Designer.cs">
+      <DependentUpon>rptSUBGINScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSubGINStackBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSubGINStackBalance.Designer.cs">
+      <DependentUpon>rptSubGINStackBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSubPSA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSubPSA.designer.cs">
+      <DependentUpon>rptSubPSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSubPSAApproval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSubPSAApproval.designer.cs">
+      <DependentUpon>rptSubPSAApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSubPUNWRReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSubPUNWRReport.designer.cs">
+      <DependentUpon>rptSubPUNWRReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptSubStockBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptSubStockBalance.Designer.cs">
+      <DependentUpon>rptSubStockBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_StockBalance.aspx.cs">
+      <DependentUpon>Report_StockBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report_StockBalance.aspx.designer.cs">
+      <DependentUpon>Report_StockBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report_WBServiceProvider.aspx.cs">
+      <DependentUpon>Report_WBServiceProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report_WBServiceProvider.aspx.designer.cs">
+      <DependentUpon>Report_WBServiceProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestApprovedGRNCancelation.aspx.cs">
+      <DependentUpon>RequestApprovedGRNCancelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestApprovedGRNCancelation.aspx.designer.cs">
+      <DependentUpon>RequestApprovedGRNCancelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptGradingResultReport.aspx.cs">
+      <DependentUpon>rptGradingResultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptGradingResultReport.aspx.designer.cs">
+      <DependentUpon>rptGradingResultReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptGRN.aspx.cs">
+      <DependentUpon>rptGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptGRN.aspx.designer.cs">
+      <DependentUpon>rptGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleCodeReceive.aspx.cs">
+      <DependentUpon>SampleCodeReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleCodeReceive.aspx.designer.cs">
+      <DependentUpon>SampleCodeReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SamplerReassignment.aspx.cs">
+      <DependentUpon>SamplerReassignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplerReassignment.aspx.designer.cs">
+      <DependentUpon>SamplerReassignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SamplingTicket.aspx.cs">
+      <DependentUpon>SamplingTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplingTicket.aspx.designer.cs">
+      <DependentUpon>SamplingTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCGTotalValueEdit.aspx.cs">
+      <DependentUpon>SearchCGTotalValueEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchCGTotalValueEdit.aspx.designer.cs">
+      <DependentUpon>SearchCGTotalValueEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPage.aspx.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchPage.aspx.designer.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPickupNotice.aspx.cs">
+      <DependentUpon>SearchPickupNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchPickupNotice.aspx.designer.cs">
+      <DependentUpon>SearchPickupNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPSA.aspx.cs">
+      <DependentUpon>SearchPSA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchPSA.aspx.designer.cs">
+      <DependentUpon>SearchPSA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSampleTicket.aspx.cs">
+      <DependentUpon>SearchSampleTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchSampleTicket.aspx.designer.cs">
+      <DependentUpon>SearchSampleTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SLAData.aspx.cs">
+      <DependentUpon>SLAData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SLAData.aspx.designer.cs">
+      <DependentUpon>SLAData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StackManagement.aspx.cs">
+      <DependentUpon>StackManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StackManagement.aspx.designer.cs">
+      <DependentUpon>StackManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TakePhysicalCount.aspx.cs">
+      <DependentUpon>TakePhysicalCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TakePhysicalCount.aspx.designer.cs">
+      <DependentUpon>TakePhysicalCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrackingNumberCheck.aspx.cs">
+      <DependentUpon>TrackingNumberCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrackingNumberCheck.aspx.designer.cs">
+      <DependentUpon>TrackingNumberCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckRegistrationInfo.cs" />
+    <Compile Include="UpdateGRNNumber.aspx.cs">
+      <DependentUpon>UpdateGRNNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateGRNNumber.aspx.designer.cs">
+      <DependentUpon>UpdateGRNNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GradingResultControlNew.ascx.cs">
+      <DependentUpon>GradingResultControlNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GradingResultControlNew.ascx.designer.cs">
+      <DependentUpon>GradingResultControlNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchPageNew.ascx.cs">
+      <DependentUpon>SearchPageNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchPageNew.ascx.designer.cs">
+      <DependentUpon>SearchPageNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Truck.asmx.cs">
+      <DependentUpon>Truck.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TruckLeftCompound.aspx.cs">
+      <DependentUpon>TruckLeftCompound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckLeftCompound.aspx.designer.cs">
+      <DependentUpon>TruckLeftCompound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalendarToggler.ascx.cs">
+      <DependentUpon>CalendarToggler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalendarToggler.ascx.designer.cs">
+      <DependentUpon>CalendarToggler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAbsentTrucks.ascx.cs">
+      <DependentUpon>UIAbsentTrucks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAbsentTrucks.ascx.designer.cs">
+      <DependentUpon>UIAbsentTrucks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddApprovedGRNCancelationRequest.ascx.cs">
+      <DependentUpon>UIAddApprovedGRNCancelationRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddApprovedGRNCancelationRequest.ascx.designer.cs">
+      <DependentUpon>UIAddApprovedGRNCancelationRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddCommodityGradeGradingFactor.ascx.cs">
+      <DependentUpon>UIAddCommodityGradeGradingFactor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddCommodityGradeGradingFactor.ascx.designer.cs">
+      <DependentUpon>UIAddCommodityGradeGradingFactor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddCommodityGradingFactor.ascx.cs">
+      <DependentUpon>UIAddCommodityGradingFactor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddCommodityGradingFactor.ascx.designer.cs">
+      <DependentUpon>UIAddCommodityGradingFactor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddGradingFactorGroup.ascx.cs">
+      <DependentUpon>UIAddGradingFactorGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddGradingFactorGroup.ascx.designer.cs">
+      <DependentUpon>UIAddGradingFactorGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddRequestforEditGRN.ascx.cs">
+      <DependentUpon>UIAddRequestforEditGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddRequestforEditGRN.ascx.designer.cs">
+      <DependentUpon>UIAddRequestforEditGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddTrucksForSampling.ascx.cs">
+      <DependentUpon>UIAddTrucksForSampling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddTrucksForSampling.ascx.designer.cs">
+      <DependentUpon>UIAddTrucksForSampling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIArrivalToDeposite.ascx.cs">
+      <DependentUpon>UIArrivalToDeposite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIArrivalToDeposite.ascx.designer.cs">
+      <DependentUpon>UIArrivalToDeposite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UICancelGRN.ascx.cs">
+      <DependentUpon>UICancelGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UICancelGRN.ascx.designer.cs">
+      <DependentUpon>UICancelGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIConfirmTrucks.ascx.cs">
+      <DependentUpon>UIConfirmTrucks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIConfirmTrucks.ascx.designer.cs">
+      <DependentUpon>UIConfirmTrucks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditApprovedGRNCancelRequest.ascx.cs">
+      <DependentUpon>UIEditApprovedGRNCancelRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditApprovedGRNCancelRequest.ascx.designer.cs">
+      <DependentUpon>UIEditApprovedGRNCancelRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditApprovedGRNEditRequest.ascx.cs">
+      <DependentUpon>UIEditApprovedGRNEditRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditApprovedGRNEditRequest.ascx.designer.cs">
+      <DependentUpon>UIEditApprovedGRNEditRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditCGTotalValue.ascx.cs">
+      <DependentUpon>UIEditCGTotalValue.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditCGTotalValue.ascx.designer.cs">
+      <DependentUpon>UIEditCGTotalValue.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditGRN.ascx.cs">
+      <DependentUpon>UIEditGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditGRN.ascx.designer.cs">
+      <DependentUpon>UIEditGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditSampling.ascx.cs">
+      <DependentUpon>UIEditSampling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditSampling.ascx.designer.cs">
+      <DependentUpon>UIEditSampling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIGradingFactors.ascx.cs">
+      <DependentUpon>UIGradingFactors.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIGradingFactors.ascx.designer.cs">
+      <DependentUpon>UIGradingFactors.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIGRNSentbyDate.ascx.cs">
+      <DependentUpon>UIGRNSentbyDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIGRNSentbyDate.ascx.designer.cs">
+      <DependentUpon>UIGRNSentbyDate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIListRequestCancelForApprovedGRN.ascx.cs">
+      <DependentUpon>UIListRequestCancelForApprovedGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIListRequestCancelForApprovedGRN.ascx.designer.cs">
+      <DependentUpon>UIListRequestCancelForApprovedGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIListRequestEditForApprovedGRN.ascx.cs">
+      <DependentUpon>UIListRequestEditForApprovedGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIListRequestEditForApprovedGRN.ascx.designer.cs">
+      <DependentUpon>UIListRequestEditForApprovedGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIOpenGRNEdit.ascx.cs">
+      <DependentUpon>UIOpenGRNEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIOpenGRNEdit.ascx.designer.cs">
+      <DependentUpon>UIOpenGRNEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIReceiveSampleCode.ascx.cs">
+      <DependentUpon>UIReceiveSampleCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIReceiveSampleCode.ascx.designer.cs">
+      <DependentUpon>UIReceiveSampleCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIReCreateGRN.ascx.cs">
+      <DependentUpon>UIReCreateGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIReCreateGRN.ascx.designer.cs">
+      <DependentUpon>UIReCreateGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchableInboxDetail.ascx.cs">
+      <DependentUpon>UISearchableInboxDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchableInboxDetail.ascx.designer.cs">
+      <DependentUpon>UISearchableInboxDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchGrading.ascx.cs">
+      <DependentUpon>UISearchGrading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchGrading.ascx.designer.cs">
+      <DependentUpon>UISearchGrading.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchSamplingTicket.ascx.cs">
+      <DependentUpon>UISearchSamplingTicket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchSamplingTicket.ascx.designer.cs">
+      <DependentUpon>UISearchSamplingTicket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISLAData.ascx.cs">
+      <DependentUpon>UISLAData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISLAData.ascx.designer.cs">
+      <DependentUpon>UISLAData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UITrackingNumberCheck.ascx.cs">
+      <DependentUpon>UITrackingNumberCheck.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UITrackingNumberCheck.ascx.designer.cs">
+      <DependentUpon>UITrackingNumberCheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIUpdateGRNNumber.ascx.cs">
+      <DependentUpon>UIUpdateGRNNumber.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIUpdateGRNNumber.ascx.designer.cs">
+      <DependentUpon>UIUpdateGRNNumber.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WarehouseReports.aspx.cs">
+      <DependentUpon>WarehouseReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WarehouseReports.aspx.designer.cs">
+      <DependentUpon>WarehouseReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGRN.aspx.cs">
+      <DependentUpon>ViewGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGRN.aspx.designer.cs">
+      <DependentUpon>ViewGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditReSampling.aspx.cs">
+      <DependentUpon>EditReSampling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditReSampling.aspx.designer.cs">
+      <DependentUpon>EditReSampling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditSamplingResult.aspx.cs">
+      <DependentUpon>EditSamplingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditSamplingResult.aspx.designer.cs">
+      <DependentUpon>EditSamplingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditTruckInformation.aspx.cs">
+      <DependentUpon>EditTruckInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditTruckInformation.aspx.designer.cs">
+      <DependentUpon>EditTruckInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditTruckLoading.aspx.cs">
+      <DependentUpon>EditTruckLoading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditTruckLoading.aspx.designer.cs">
+      <DependentUpon>EditTruckLoading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditTruckScaling.aspx.cs">
+      <DependentUpon>EditTruckScaling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditTruckScaling.aspx.designer.cs">
+      <DependentUpon>EditTruckScaling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditScaling.aspx.cs">
+      <DependentUpon>EditScaling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditScaling.aspx.designer.cs">
+      <DependentUpon>EditScaling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUnloadingInformation.aspx.cs">
+      <DependentUpon>EditUnloadingInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditUnloadingInformation.aspx.designer.cs">
+      <DependentUpon>EditUnloadingInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorMessageDisplayer.cs" />
+    <Compile Include="GenerateGIN.aspx.cs">
+      <DependentUpon>GenerateGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateGIN.aspx.designer.cs">
+      <DependentUpon>GenerateGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINLogic\CachedDictionary.cs" />
+    <Compile Include="GINLogic\GINBLL.cs" />
+    <Compile Include="GINLogic\GINInformation.cs" />
+    <Compile Include="GINLogic\GINLogicInterfaces.cs" />
+    <Compile Include="GINLogic\PickupNoticeBLL.cs" />
+    <Compile Include="GINLogic\PickupNoticeCacher.cs" />
+    <Compile Include="GINLogic\SystemLookup.cs" />
+    <Compile Include="GINProcess.aspx.cs">
+      <DependentUpon>GINProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINProcess.aspx.designer.cs">
+      <DependentUpon>GINProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINProcessWrapper.cs" />
+    <Compile Include="GINSamplers.aspx.cs">
+      <DependentUpon>GINSamplers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINSamplers.aspx.designer.cs">
+      <DependentUpon>GINSamplers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GINSamplingResults.aspx.cs">
+      <DependentUpon>GINSamplingResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINSamplingResults.aspx.designer.cs">
+      <DependentUpon>GINSamplingResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GradeGIN.aspx.cs">
+      <DependentUpon>GradeGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradeGIN.aspx.designer.cs">
+      <DependentUpon>GradeGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradingResultClientAcceptance.aspx.cs">
+      <DependentUpon>GradingResultClientAcceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradingResultClientAcceptance.aspx.designer.cs">
+      <DependentUpon>GradingResultClientAcceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRNAcceptance.aspx.cs">
+      <DependentUpon>GRNAcceptance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRNAcceptance.aspx.designer.cs">
+      <DependentUpon>GRNAcceptance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListCommodityDepositRequest.aspx.cs">
+      <DependentUpon>ListCommodityDepositRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListCommodityDepositRequest.aspx.designer.cs">
+      <DependentUpon>ListCommodityDepositRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListGIN.aspx.cs">
+      <DependentUpon>ListGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListGIN.aspx.designer.cs">
+      <DependentUpon>ListGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListGradingResult.aspx.cs">
+      <DependentUpon>ListGradingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListGradingResult.aspx.designer.cs">
+      <DependentUpon>ListGradingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListGRN.aspx.cs">
+      <DependentUpon>ListGRN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListGRN.aspx.designer.cs">
+      <DependentUpon>ListGRN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListInbox.aspx.cs">
+      <DependentUpon>ListInbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListInbox.aspx.designer.cs">
+      <DependentUpon>ListInbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListInboxDetail.aspx.cs">
+      <DependentUpon>ListInboxDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListInboxDetail.aspx.designer.cs">
+      <DependentUpon>ListInboxDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListPickupNotice.aspx.cs">
+      <DependentUpon>ListPickupNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListPickupNotice.aspx.designer.cs">
+      <DependentUpon>ListPickupNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListPUNAcknowledgement.aspx.cs">
+      <DependentUpon>ListPUNAcknowledgement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListPUNAcknowledgement.aspx.designer.cs">
+      <DependentUpon>ListPUNAcknowledgement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListSamplingResult.aspx.cs">
+      <DependentUpon>ListSamplingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListSamplingResult.aspx.designer.cs">
+      <DependentUpon>ListSamplingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListStack.aspx.cs">
+      <DependentUpon>ListStack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListStack.aspx.designer.cs">
+      <DependentUpon>ListStack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListUnloadingInformation.aspx.cs">
+      <DependentUpon>ListUnloadingInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListUnloadingInformation.aspx.designer.cs">
+      <DependentUpon>ListUnloadingInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Location.asmx.cs">
+      <DependentUpon>Location.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageDataTransfer.cs" />
+    <Compile Include="PageSwicther.aspx.cs">
+      <DependentUpon>PageSwicther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageSwicther.aspx.designer.cs">
+      <DependentUpon>PageSwicther.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickupNoticeAcknowledged.aspx.cs">
+      <DependentUpon>PickupNoticeAcknowledged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickupNoticeAcknowledged.aspx.designer.cs">
+      <DependentUpon>PickupNoticeAcknowledged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostWeighTruck.aspx.cs">
+      <DependentUpon>PostWeighTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostWeighTruck.aspx.designer.cs">
+      <DependentUpon>PostWeighTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreWeighTruck.aspx.cs">
+      <DependentUpon>PreWeighTruck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreWeighTruck.aspx.designer.cs">
+      <DependentUpon>PreWeighTruck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="pTop.Master.cs">
+      <DependentUpon>pTop.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pTop.Master.designer.cs">
+      <DependentUpon>pTop.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PUNFilterFormatter.cs" />
+    <Compile Include="pUtility.Master.cs">
+      <DependentUpon>pUtility.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pUtility.Master.designer.cs">
+      <DependentUpon>pUtility.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ReAssignSampler.aspx.cs">
+      <DependentUpon>ReAssignSampler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReAssignSampler.aspx.designer.cs">
+      <DependentUpon>ReAssignSampler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSampleTicket.aspx.cs">
+      <DependentUpon>ReportSampleTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSampleTicket.aspx.designer.cs">
+      <DependentUpon>ReportSampleTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSamplingResult.aspx.cs">
+      <DependentUpon>ReportSamplingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSamplingResult.aspx.designer.cs">
+      <DependentUpon>ReportSamplingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CoffeeCodingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CoffeeCodingReport.Designer.cs">
+      <DependentUpon>CoffeeCodingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportData.cs" />
+    <Compile Include="Reports\rptGINTrackingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGINTrackingReport.Designer.cs">
+      <DependentUpon>rptGINTrackingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPUNTrackingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPUNTrackingReport.Designer.cs">
+      <DependentUpon>rptPUNTrackingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSampleTicketCoffee.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSampleTicketCoffee.Designer.cs">
+      <DependentUpon>rptSampleTicketCoffee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptTrackingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptTrackingReport.Designer.cs">
+      <DependentUpon>rptTrackingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTrackingNumber.aspx.cs">
+      <DependentUpon>ReportTrackingNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportTrackingNumber.aspx.designer.cs">
+      <DependentUpon>ReportTrackingNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewerForm.aspx.cs">
+      <DependentUpon>ReportViewerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewerForm.aspx.designer.cs">
+      <DependentUpon>ReportViewerForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptCoffeeCode.aspx.cs">
+      <DependentUpon>rptCoffeeCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptCoffeeCode.aspx.designer.cs">
+      <DependentUpon>rptCoffeeCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptGraders.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptGraders.Designer.cs">
+      <DependentUpon>rptGraders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSampleTicket.aspx.cs">
+      <DependentUpon>rptSampleTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptSampleTicket.aspx.designer.cs">
+      <DependentUpon>rptSampleTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSamplingResult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSamplingResult.Designer.cs">
+      <DependentUpon>rptSamplingResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptTrackingNumber.aspx.cs">
+      <DependentUpon>rptTrackingNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptTrackingNumber.aspx.designer.cs">
+      <DependentUpon>rptTrackingNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateGradingCode.aspx.cs">
+      <DependentUpon>GenerateGradingCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateGradingCode.aspx.designer.cs">
+      <DependentUpon>GenerateGradingCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleGIN.aspx.cs">
+      <DependentUpon>SampleGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleGIN.aspx.designer.cs">
+      <DependentUpon>SampleGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SamplingResult.aspx.cs">
+      <DependentUpon>SamplingResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SamplingResult.aspx.designer.cs">
+      <DependentUpon>SamplingResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUnloadingInformation.aspx.cs">
+      <DependentUpon>AddUnloadingInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUnloadingInformation.aspx.designer.cs">
+      <DependentUpon>AddUnloadingInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchReSampling.aspx.cs">
+      <DependentUpon>SearchReSampling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchReSampling.aspx.designer.cs">
+      <DependentUpon>SearchReSampling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchScalingInformation.aspx.cs">
+      <DependentUpon>SearchScalingInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchScalingInformation.aspx.designer.cs">
+      <DependentUpon>SearchScalingInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SECManager\ISecurityConfiguration.cs" />
+    <Compile Include="SECManager\SecurityConfiguration.cs" />
+    <Compile Include="SelectWarehouse.aspx.cs">
+      <DependentUpon>SelectWarehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectWarehouse.aspx.designer.cs">
+      <DependentUpon>SelectWarehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StackCDDService.asmx.cs">
+      <DependentUpon>StackCDDService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransferGIN.aspx.cs">
+      <DependentUpon>TransferGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferGIN.aspx.designer.cs">
+      <DependentUpon>TransferGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckLoading.aspx.cs">
+      <DependentUpon>TruckLoading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckLoading.aspx.designer.cs">
+      <DependentUpon>TruckLoading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckRegistration.aspx.cs">
+      <DependentUpon>TruckRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckRegistration.aspx.designer.cs">
+      <DependentUpon>TruckRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TruckScaling.aspx.cs">
+      <DependentUpon>TruckScaling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TruckScaling.aspx.designer.cs">
+      <DependentUpon>TruckScaling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CatalogDriver.cs" />
+    <Compile Include="UserControls\Commodity.asmx.cs">
+      <DependentUpon>Commodity.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\GINDataEditor.ascx.cs">
+      <DependentUpon>GINDataEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GINDataEditor.ascx.designer.cs">
+      <DependentUpon>GINDataEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GINGridViewer.ascx.cs">
+      <DependentUpon>GINGridViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GINGridViewer.ascx.designer.cs">
+      <DependentUpon>GINGridViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InsertCommodityDepositrequest.ascx.cs">
+      <DependentUpon>InsertCommodityDepositrequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InsertCommodityDepositrequest.ascx.designer.cs">
+      <DependentUpon>InsertCommodityDepositrequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ClientSelector.ascx.cs">
+      <DependentUpon>ClientSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientSelector.ascx.designer.cs">
+      <DependentUpon>ClientSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InsertDriverInformation.ascx.cs">
+      <DependentUpon>InsertDriverInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InsertDriverInformation.ascx.designer.cs">
+      <DependentUpon>InsertDriverInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InsertVoucherInformation.ascx.cs">
+      <DependentUpon>InsertVoucherInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InsertVoucherInformation.ascx.designer.cs">
+      <DependentUpon>InsertVoucherInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Location.ascx.cs">
+      <DependentUpon>Location.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Location.ascx.designer.cs">
+      <DependentUpon>Location.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchConditionSelector.ascx.cs">
+      <DependentUpon>SearchConditionSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchConditionSelector.ascx.designer.cs">
+      <DependentUpon>SearchConditionSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchControl.ascx.cs">
+      <DependentUpon>SearchControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchControl.ascx.designer.cs">
+      <DependentUpon>SearchControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAcceptGradingResult.ascx.cs">
+      <DependentUpon>UIAcceptGradingResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAcceptGradingResult.ascx.designer.cs">
+      <DependentUpon>UIAcceptGradingResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddGradeDispute.ascx.cs">
+      <DependentUpon>UIAddGradeDispute.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddGradeDispute.ascx.designer.cs">
+      <DependentUpon>UIAddGradeDispute.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddGRN.ascx.cs">
+      <DependentUpon>UIAddGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddGRN.ascx.designer.cs">
+      <DependentUpon>UIAddGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddScalingInformation.ascx.cs">
+      <DependentUpon>UIAddScalingInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddScalingInformation.ascx.designer.cs">
+      <DependentUpon>UIAddScalingInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddStack.ascx.cs">
+      <DependentUpon>UIAddStack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddStack.ascx.designer.cs">
+      <DependentUpon>UIAddStack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddUnloading.ascx.cs">
+      <DependentUpon>UIAddUnloading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddUnloading.ascx.designer.cs">
+      <DependentUpon>UIAddUnloading.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIClientAcceptGRN.ascx.cs">
+      <DependentUpon>UIClientAcceptGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIClientAcceptGRN.ascx.designer.cs">
+      <DependentUpon>UIClientAcceptGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditGradeDispute.ascx.cs">
+      <DependentUpon>UIEditGradeDispute.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditGradeDispute.ascx.designer.cs">
+      <DependentUpon>UIEditGradeDispute.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditGradingReceived.ascx.cs">
+      <DependentUpon>UIEditGradingReceived.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditGradingReceived.ascx.designer.cs">
+      <DependentUpon>UIEditGradingReceived.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditGradingResult.ascx.cs">
+      <DependentUpon>UIEditGradingResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditGradingResult.ascx.designer.cs">
+      <DependentUpon>UIEditGradingResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditMoisstureReSamplingRequest.ascx.cs">
+      <DependentUpon>UIEditMoisstureReSamplingRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditMoisstureReSamplingRequest.ascx.designer.cs">
+      <DependentUpon>UIEditMoisstureReSamplingRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditSamplingResult.ascx.cs">
+      <DependentUpon>UIEditSamplingResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditSamplingResult.ascx.designer.cs">
+      <DependentUpon>UIEditSamplingResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditScaling.ascx.cs">
+      <DependentUpon>UIEditScaling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditScaling.ascx.designer.cs">
+      <DependentUpon>UIEditScaling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditUnloading.ascx.cs">
+      <DependentUpon>UIEditUnloading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditUnloading.ascx.designer.cs">
+      <DependentUpon>UIEditUnloading.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIGetGradingCode.ascx.cs">
+      <DependentUpon>UIGetGradingCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIGetGradingCode.ascx.designer.cs">
+      <DependentUpon>UIGetGradingCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddGradingRecived.ascx.cs">
+      <DependentUpon>UIAddGradingRecived.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddGradingRecived.ascx.designer.cs">
+      <DependentUpon>UIAddGradingRecived.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIGetGradingResults.ascx.cs">
+      <DependentUpon>UIGetGradingResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIGetGradingResults.ascx.designer.cs">
+      <DependentUpon>UIGetGradingResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIInboxDetail.ascx.cs">
+      <DependentUpon>UIInboxDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIInboxDetail.ascx.designer.cs">
+      <DependentUpon>UIInboxDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIMoistureResamplingRequest.ascx.cs">
+      <DependentUpon>UIMoistureResamplingRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIMoistureResamplingRequest.ascx.designer.cs">
+      <DependentUpon>UIMoistureResamplingRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIReAssignSampler.ascx.cs">
+      <DependentUpon>UIReAssignSampler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIReAssignSampler.ascx.designer.cs">
+      <DependentUpon>UIReAssignSampler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIAddSamplingResult.ascx.cs">
+      <DependentUpon>UIAddSamplingResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIAddSamplingResult.ascx.designer.cs">
+      <DependentUpon>UIAddSamplingResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchCommodityDepositRequest.ascx.cs">
+      <DependentUpon>SearchCommodityDepositRequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchCommodityDepositRequest.ascx.designer.cs">
+      <DependentUpon>SearchCommodityDepositRequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIEditCommodityDepositrequest.ascx.cs">
+      <DependentUpon>UIEditCommodityDepositrequest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIEditCommodityDepositrequest.ascx.designer.cs">
+      <DependentUpon>UIEditCommodityDepositrequest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UIGetSamplingTicketById.ascx.cs">
+      <DependentUpon>UIGetSamplingTicketById.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UIGetSamplingTicketById.ascx.designer.cs">
+      <DependentUpon>UIGetSamplingTicketById.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISamplingResultSearch.ascx.cs">
+      <DependentUpon>UISamplingResultSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISamplingResultSearch.ascx.designer.cs">
+      <DependentUpon>UISamplingResultSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchGRN.ascx.cs">
+      <DependentUpon>UISearchGRN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchGRN.ascx.designer.cs">
+      <DependentUpon>UISearchGRN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchResampling.ascx.cs">
+      <DependentUpon>UISearchResampling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchResampling.ascx.designer.cs">
+      <DependentUpon>UISearchResampling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchScaling.ascx.cs">
+      <DependentUpon>UISearchScaling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchScaling.ascx.designer.cs">
+      <DependentUpon>UISearchScaling.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchStack.ascx.cs">
+      <DependentUpon>UISearchStack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchStack.ascx.designer.cs">
+      <DependentUpon>UISearchStack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UISearchUnloadingInformation.ascx.cs">
+      <DependentUpon>UISearchUnloadingInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UISearchUnloadingInformation.ascx.designer.cs">
+      <DependentUpon>UISearchUnloadingInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WarehouseInbox.ascx.cs">
+      <DependentUpon>WarehouseInbox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WarehouseInbox.ascx.designer.cs">
+      <DependentUpon>WarehouseInbox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyGINAvailability.aspx.cs">
+      <DependentUpon>VerifyGINAvailability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerifyGINAvailability.aspx.designer.cs">
+      <DependentUpon>VerifyGINAvailability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewListCommodityDepositeRequest.aspx.cs">
+      <DependentUpon>ViewListCommodityDepositeRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewListCommodityDepositeRequest.aspx.designer.cs">
+      <DependentUpon>ViewListCommodityDepositeRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseOperators.aspx.cs">
+      <DependentUpon>WarehouseOperators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseOperators.aspx.designer.cs">
+      <DependentUpon>WarehouseOperators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ECXCD\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ECXSecurity\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ECXLookUp\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ECXWF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Membership\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="GINSearch.aspx.cs">
+      <DependentUpon>GINSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GINSearch.aspx.designer.cs">
+      <DependentUpon>GINSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowTaskInitiator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="AddApprovedGRNEditRequest.aspx" />
+    <Content Include="AddCommodityDepositRequest.aspx" />
+    <Content Include="AddCommodityGradeGradingFactor.aspx" />
+    <Content Include="AddCommodityGradingFactor.aspx" />
+    <Content Include="AddDriverInformation.aspx" />
+    <Content Include="AddGradeDispute.aspx" />
+    <Content Include="AddGradingFactor.aspx" />
+    <Content Include="AddGradingFactorGroup.aspx" />
+    <Content Include="AddGradingResult.aspx" />
+    <Content Include="AddGRN.aspx" />
+    <Content Include="AddMoistureReSampling.aspx" />
+    <Content Include="AddSamplingResult.aspx" />
+    <Content Include="AddScalingInformation.aspx" />
+    <Content Include="AddStack.aspx" />
+    <Content Include="AddVoucherInformation.aspx" />
+    <Content Include="ApproveGIN.aspx" />
+    <Content Include="ApproveGINEditRequest.aspx" />
+    <Content Include="ApproveGradeDispute.aspx" />
+    <Content Include="arrow-join.png" />
+    <Content Include="AssignShed.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\ECXControlsCollection.dll" />
+    <Content Include="bin\Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="bin\Microsoft.Data.SqlXml.dll" />
+    <Content Include="CancelGRN.aspx" />
+    <Content Include="CD.css" />
+    <Content Include="CDDTrackRegistration.asmx" />
+    <Content Include="ClientAcknowledgeGIN.aspx" />
+    <Content Include="ClientTest.asmx" />
+    <Content Include="CloseInboxDetail.aspx" />
+    <Content Include="ConfirmTrucksForSampling.aspx" />
+    <Content Include="ConsignmentExpiryList.aspx" />
+    <Content Include="DailyArrivalReport.aspx" />
+    <Content Include="DailyDeliveryReport.aspx" />
+    <Content Include="DailyDepositReport.aspx" />
+    <Content Include="DailyPSAReport.aspx" />
+    <Content Include="EditConsignment.aspx" />
+    <Content Include="EditGRN.aspx" />
+    <Content Include="EditSamplerAttendance.aspx" />
+    <Content Include="EnablePUNPrint.aspx" />
+    <Content Include="GenerateGrading.aspx" />
+    <Content Include="GetSampleTicket.aspx" />
+    <Content Include="GetSampleTicketNew.aspx" />
+    <Content Include="GIN.aspx" />
+    <Content Include="GINApprovalReport.aspx" />
+    <Content Include="GINApprove.aspx" />
+    <Content Include="GINPSA.aspx" />
+    <Content Include="GradingResult.aspx" />
+    <Content Include="GradingResultClientAcceptanceNew.aspx" />
+    <Content Include="GRNApproval.aspx" />
+    <Content Include="GRNApprovalSup.aspx" />
+    <Content Include="GRNApprovalSupervisor.aspx" />
+    <Content Include="GRNCancellationRequest.aspx" />
+    <Content Include="GRNClientSign.aspx" />
+    <Content Include="Images\ECXlogo.jpg" />
+    <Content Include="Images\logo.ico" />
+    <Content Include="Images\messagebox_info.png" />
+    <Content Include="Images\NewHeader.jpg" />
+    <Content Include="Images\NewHeaderLook.jpg" />
+    <Content Include="Images\NewHeaderLook.png" />
+    <Content Include="Images\NewHeaderLook1.jpg" />
+    <Content Include="Images\pleasewait.gif" />
+    <Content Include="Images\Refresh.png" />
+    <Content Include="Images\saving.gif" />
+    <Content Include="ImportWareHouseReceipt.aspx" />
+    <Content Include="InventoryControlAdjustment.aspx" />
+    <Content Include="InventoryControlAdjustmentApprove.aspx" />
+    <Content Include="InventoryTransfering.aspx" />
+    <Content Include="InventoryTransferWhenLICResign.aspx" />
+    <Content Include="ListInboxDetailNew.aspx" />
+    <Content Include="ListInboxNew.aspx" />
+    <Content Include="ListInboxNew2.aspx" />
+    <Content Include="ManageLocations.aspx" />
+    <Content Include="DALManager\DataAccessConfiguration.xml" />
+    <Content Include="EditApprovedGRNCancelRequest.aspx" />
+    <Content Include="EditCommodityDepositeRequest.aspx" />
+    <Content Include="EditGradingResult.aspx" />
+    <Content Include="EditTrucksMissingStatus.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="GetTrucksReadyForSampling.aspx" />
+    <Content Include="GRNWRSync.asmx" />
+    <Content Include="Images\message_logos.png" />
+    <Content Include="InboxCancelApprovedGRNQueue.xml" />
+    <Content Include="InboxApprovedGRNEditRequest.xml" />
+    <Content Include="EditApprovedGRNEditRequest.aspx" />
+    <Content Include="InboxGINEditQueue.xml" />
+    <Content Include="ListGrading.aspx" />
+    <Content Include="ListPhysicalCount.aspx" />
+    <Content Include="ListRequestCancelForApprovedGRN.aspx" />
+    <Content Include="ListRequestEditForApprovedGRN.aspx" />
+    <Content Include="EditReSampling.aspx" />
+    <Content Include="EditTruckInformation.aspx" />
+    <Content Include="EditTruckLoading.aspx" />
+    <Content Include="EditTruckScaling.aspx" />
+    <Content Include="EditScaling.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="InboxGDQueue.xml" />
+    <Content Include="InboxGINQueue.xml" />
+    <Content Include="DALManager\DALConfiguration.xml" />
+    <Content Include="EditCommodityDepositRequest.aspx" />
+    <Content Include="EditGradeDispute.aspx" />
+    <Content Include="EditGradingReceived.aspx" />
+    <Content Include="ListSearchableInboxDetail.aspx" />
+    <Content Include="ManagerGINApprove.aspx" />
+    <Content Include="ManagerPSAApprove.aspx" />
+    <Content Include="MapingCommodityClassGrade.aspx" />
+    <Content Include="Messages.ascx" />
+    <Content Include="messages.css" />
+    <Content Include="OpenGRNEdit.aspx" />
+    <Content Include="PageSwictherNew.aspx" />
+    <Content Include="PickupNoticeExpiredList.aspx" />
+    <Content Include="PickupNoticeExpiredListAdmin.aspx" />
+    <Content Include="PreArrival.aspx" />
+    <Content Include="PSAApprove.aspx" />
+    <Content Include="ReceiveSampleCode.aspx" />
+    <Content Include="ReceiveSampleCodeNew.aspx" />
+    <Content Include="ReCreateGRN.aspx" />
+    <Content Include="ReportGRNPreApproval.aspx" />
+    <Content Include="ReportInventoryBalance.aspx" />
+    <Content Include="ReportInventoryTransfer.aspx" />
+    <Content Include="ReportInvTransfer.aspx" />
+    <Content Include="ReportStackBalance.aspx" />
+    <Content Include="ReportViewer.aspx" />
+    <Content Include="Report_StockBalance.aspx" />
+    <Content Include="Report_WBServiceProvider.aspx" />
+    <Content Include="RequestApprovedGRNCancelation.aspx" />
+    <Content Include="rptGradingResultReport.aspx" />
+    <Content Include="rptGRN.aspx" />
+    <Content Include="SampleCodeReceive.aspx" />
+    <Content Include="SamplerReassignment.aspx" />
+    <Content Include="SamplingTicket.aspx" />
+    <Content Include="Scripts\jQuery-v1.10.2.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\snow.js" />
+    <Content Include="SearchCGTotalValueEdit.aspx" />
+    <Content Include="SearchPage.aspx" />
+    <Content Include="SearchPickupNotice.aspx" />
+    <Content Include="SearchPSA.aspx" />
+    <Content Include="SearchSampleTicket.aspx" />
+    <Content Include="SECManager\Copy %282%29 of SecurityConfiguration.xml" />
+    <Content Include="SECManager\Copy of SecurityConfiguration.xml" />
+    <Content Include="SLAData.aspx" />
+    <Content Include="StackManagement.aspx" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="Styles\ControlsView.css" />
+    <Content Include="TakePhysicalCount.aspx" />
+    <Content Include="TrackingNumberCheck.aspx" />
+    <Content Include="UpdateGRNNumber.aspx" />
+    <Content Include="UserControls\GradingResultControlNew.ascx" />
+    <Content Include="UserControls\SearchPageNew.ascx" />
+    <Content Include="UserControls\Truck.asmx" />
+    <Content Include="TruckLeftCompound.aspx" />
+    <Content Include="UserControls\CalendarToggler.ascx" />
+    <Content Include="UserControls\UIAbsentTrucks.ascx" />
+    <Content Include="UserControls\UIAddApprovedGRNCancelationRequest.ascx" />
+    <Content Include="UserControls\UIAddCommodityGradeGradingFactor.ascx" />
+    <Content Include="UserControls\UIAddCommodityGradingFactor.ascx" />
+    <Content Include="UserControls\UIAddGradingFactorGroup.ascx" />
+    <Content Include="UserControls\UIAddRequestforEditGRN.ascx" />
+    <Content Include="UserControls\UIAddTrucksForSampling.ascx" />
+    <Content Include="UserControls\UIArrivalToDeposite.ascx" />
+    <Content Include="UserControls\UICancelGRN.ascx" />
+    <Content Include="UserControls\UIConfirmTrucks.ascx" />
+    <Content Include="UserControls\UIEditApprovedGRNCancelRequest.ascx" />
+    <Content Include="UserControls\UIEditApprovedGRNEditRequest.ascx" />
+    <Content Include="UserControls\UIEditCGTotalValue.ascx" />
+    <Content Include="UserControls\UIEditGRN.ascx" />
+    <Content Include="UserControls\UIEditSampling.ascx" />
+    <Content Include="UserControls\UIGradingFactors.ascx" />
+    <Content Include="UserControls\UIGRNSentbyDate.ascx" />
+    <Content Include="UserControls\UIListRequestCancelForApprovedGRN.ascx" />
+    <Content Include="UserControls\UIListRequestEditForApprovedGRN.ascx" />
+    <Content Include="UserControls\UIOpenGRNEdit.ascx" />
+    <Content Include="UserControls\UIReceiveSampleCode.ascx" />
+    <Content Include="UserControls\UIReCreateGRN.ascx" />
+    <Content Include="UserControls\UISearchableInboxDetail.ascx" />
+    <Content Include="UserControls\UISearchGrading.ascx" />
+    <Content Include="UserControls\UISearchSamplingTicket.ascx" />
+    <Content Include="UserControls\UISLAData.ascx" />
+    <Content Include="UserControls\UITrackingNumberCheck.ascx" />
+    <Content Include="UserControls\UIUpdateGRNNumber.ascx" />
+    <Content Include="UserControls\WarehouseReports.aspx" />
+    <Content Include="ViewGRN.aspx" />
+    <Content Include="EditSamplingResult.aspx" />
+    <Content Include="EditUnloadingInformation.aspx" />
+    <Content Include="GenerateGIN.aspx" />
+    <Content Include="GINProcess.aspx" />
+    <Content Include="GINSamplers.aspx" />
+    <Content Include="GINSamplingResults.aspx" />
+    <Content Include="GradeGIN.aspx" />
+    <Content Include="GradingResultClientAcceptance.aspx" />
+    <Content Include="GRNAcceptance.aspx" />
+    <Content Include="Images\Banner.jpg" />
+    <Content Include="InboxGRNQueue.xml" />
+    <Content Include="InboxRCRSQueue.xml" />
+    <Content Include="ListCommodityDepositRequest.aspx" />
+    <Content Include="ListGIN.aspx" />
+    <Content Include="ListGradingResult.aspx" />
+    <Content Include="ListGRN.aspx" />
+    <Content Include="ListInbox.aspx" />
+    <Content Include="ListInboxDetail.aspx" />
+    <Content Include="ListPickupNotice.aspx" />
+    <Content Include="ListPUNAcknowledgement.aspx" />
+    <Content Include="ListSamplingResult.aspx" />
+    <Content Include="ListStack.aspx" />
+    <Content Include="ListUnloadingInformation.aspx" />
+    <Content Include="Location.asmx" />
+    <Content Include="PageSwicther.aspx" />
+    <Content Include="PickupNoticeAcknowledged.aspx" />
+    <Content Include="PostWeighTruck.aspx" />
+    <Content Include="PreWeighTruck.aspx" />
+    <Content Include="ReAssignSampler.aspx" />
+    <Content Include="ReportSampleTicket.aspx" />
+    <Content Include="ReportSamplingResult.aspx" />
+    <Content Include="ReportTrackingNumber.aspx" />
+    <Content Include="ReportViewerForm.aspx" />
+    <Content Include="rptCoffeeCode.aspx" />
+    <Content Include="rptSampleTicket.aspx" />
+    <Content Include="rptTrackingNumber.aspx" />
+    <Content Include="GenerateGradingCode.aspx" />
+    <Content Include="SampleGIN.aspx" />
+    <Content Include="SamplingResult.aspx" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\Region.js" />
+    <Content Include="AddUnloadingInformation.aspx" />
+    <Content Include="SearchReSampling.aspx" />
+    <Content Include="SearchScalingInformation.aspx" />
+    <Content Include="SECManager\SecurityConfiguration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SelectWarehouse.aspx" />
+    <Content Include="StackCDDService.asmx" />
+    <Content Include="TransferGIN.aspx" />
+    <Content Include="TruckLoading.aspx" />
+    <Content Include="TruckRegistration.aspx" />
+    <Content Include="TruckScaling.aspx" />
+    <Content Include="UserControls\Commodity.asmx" />
+    <Content Include="UserControls\GINDataEditor.ascx" />
+    <Content Include="UserControls\GINGridViewer.ascx" />
+    <Content Include="UserControls\InsertCommodityDepositrequest.ascx" />
+    <Content Include="UserControls\ClientSelector.ascx" />
+    <Content Include="UserControls\InsertDriverInformation.ascx" />
+    <Content Include="UserControls\InsertVoucherInformation.ascx" />
+    <Content Include="UserControls\Location.ascx" />
+    <Content Include="UserControls\SearchConditionSelector.ascx" />
+    <Content Include="UserControls\SearchControl.ascx" />
+    <Content Include="UserControls\UIAcceptGradingResult.ascx" />
+    <Content Include="UserControls\UIAddGradeDispute.ascx" />
+    <Content Include="UserControls\UIAddGRN.ascx" />
+    <Content Include="UserControls\UIAddScalingInformation.ascx" />
+    <Content Include="UserControls\UIAddStack.ascx" />
+    <Content Include="UserControls\UIAddUnloading.ascx" />
+    <Content Include="UserControls\UIClientAcceptGRN.ascx" />
+    <Content Include="UserControls\UIEditGradeDispute.ascx" />
+    <Content Include="UserControls\UIEditGradingReceived.ascx" />
+    <Content Include="UserControls\UIEditGradingResult.ascx" />
+    <Content Include="UserControls\UIEditMoisstureReSamplingRequest.ascx" />
+    <Content Include="UserControls\UIEditSamplingResult.ascx" />
+    <Content Include="UserControls\UIEditScaling.ascx" />
+    <Content Include="UserControls\UIEditUnloading.ascx" />
+    <Content Include="UserControls\UIGetGradingCode.ascx" />
+    <Content Include="UserControls\UIAddGradingRecived.ascx" />
+    <Content Include="UserControls\UIGetGradingResults.ascx" />
+    <Content Include="UserControls\UIInboxDetail.ascx" />
+    <Content Include="UserControls\UIMoistureResamplingRequest.ascx" />
+    <Content Include="UserControls\UIReAssignSampler.ascx" />
+    <Content Include="UserControls\UIAddSamplingResult.ascx" />
+    <Content Include="UserControls\SearchCommodityDepositRequest.ascx" />
+    <Content Include="UserControls\UIEditCommodityDepositrequest.ascx" />
+    <Content Include="UserControls\UIGetSamplingTicketById.ascx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <Content Include="GINMaster.Master" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="ClassDiagram6.cd" />
+    <None Include="ClassDiagram7.cd" />
+    <None Include="ClassDiagram8.cd" />
+    <None Include="DataSetShed.xsc">
+      <DependentUpon>DataSetShed.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetShed.xsd" />
+    <None Include="DataSetShed.xss">
+      <DependentUpon>DataSetShed.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="pTop.Master" />
+    <Content Include="UserControls\UISamplingResultSearch.ascx" />
+    <Content Include="UserControls\UISearchGRN.ascx" />
+    <Content Include="UserControls\UISearchResampling.ascx" />
+    <Content Include="UserControls\UISearchScaling.ascx" />
+    <Content Include="UserControls\UISearchStack.ascx" />
+    <Content Include="UserControls\UISearchUnloadingInformation.ascx" />
+    <Content Include="UserControls\WarehouseInbox.ascx" />
+    <Content Include="UserControls\warehouseUC.css" />
+    <Content Include="VerifyGINAvailability.aspx" />
+    <Content Include="ViewComponentConfiguration.xml" />
+    <Content Include="ViewListCommodityDepositeRequest.aspx" />
+    <Content Include="warehouse.css" />
+    <Content Include="pUtility.Master" />
+    <None Include="Web References\ECXCD\CPickUpNotice.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXCD\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ECXCD\WR.wsdl" />
+    <None Include="Web References\ECXLookUp\CAllowance.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CCertification.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CCommodityType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CEducationAward.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CEmploymentType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CFullCommodityGrade.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CLeaveType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CLevel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CNationality.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CParticulars.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CPositionTitle.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CStep.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXSecurity\AuthenticationStatus1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXSecurity\CApplication1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXSecurity\ecxsecurityaccess.wsdl" />
+    <None Include="Web References\ECXSecurity\OUser.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXSecurity\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ECXLookUp\CBag.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CBank.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CBankAccountType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CBankBranch.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CBusinessLicenseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CCommodity.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CCommodityClass.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CCommodityGrade.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CCommodityGradeBag.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CDivision.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CFee.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CGINType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CGRNType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CLanguage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CLocation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CNIDType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CRegion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CService.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CTax.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CUnit.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CWarehouse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CWarehouseRecieptType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CWarehouseShed.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CWarehouseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CWoreda.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\CZone.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\ecxlookup.wsdl" />
+    <None Include="Web References\ECXWF\CApplication.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\CMessage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\CMultipleTaskProgress1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\CSingleTaskProgress1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\CTaskNameWithTranAndStartDate1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\CTransactionType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\CTransactionWithCreatedTime1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXWF\ecxengine.wsdl" />
+    <None Include="Web References\ECXWF\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ECXWF\ecxengine.disco" />
+    <None Include="Web References\ECXLookUp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ECXWF\SCTransaction.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ECXLookUp\ecxlookup.disco" />
+    <None Include="Web References\ECXSecurity\ecxsecurityaccess.disco" />
+    <None Include="Web References\ECXCD\WR.disco" />
+    <None Include="Web References\Membership\Client.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\CommoditySettings.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\CSA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\Member.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\MemberAgreements.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\MemberClasses.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\MembershipEntities.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Membership\MemberShipLookUp.disco" />
+    <None Include="Web References\Membership\MemberShipLookUp.wsdl" />
+    <None Include="Web References\Membership\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="WarehouseOperators.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="GINSearch.aspx" />
+    <None Include="Web References\Membership\Rep.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.1.5.20:5001/CDWebservice/WR.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ECXCD\</RelPath>
+      <UpdateFromURL>http://10.1.5.20:5001/CDWebservice/WR.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WarehouseApplication_ECXCD_WR</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.1.5.20:5000/ecxlookup/ecxlookup.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ECXLookUp\</RelPath>
+      <UpdateFromURL>http://10.1.5.20:5000/ecxlookup/ecxlookup.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WarehouseApplication_ECXLookUp_ECXLookup</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.1.5.20:5001/ecxsecurity/ecxsecurityaccess.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ECXSecurity\</RelPath>
+      <UpdateFromURL>http://10.1.5.20:5001/ecxsecurity/ecxsecurityaccess.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WarehouseApplication_ecx_server1_ECXSecurityAccess</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.1.5.20:5001/ECXEngine/ECXEngine.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ECXWF\</RelPath>
+      <UpdateFromURL>http://10.1.5.20:5001/ECXEngine/ECXEngine.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WarehouseApplication_ECXWF_ECXEngine</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.1.5.20:5000/MembershipLookup/MemberShipLookUp.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Membership\</RelPath>
+      <UpdateFromURL>http://10.1.5.20:5000/MembershipLookup/MemberShipLookUp.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WarehouseApplication_Membership_MemberShipLookUp</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\CoffeeCodingReport.resx">
+      <DependentUpon>CoffeeCodingReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GradingResultReport.resx">
+      <DependentUpon>GradingResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGenerate.resx">
+      <DependentUpon>rptGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGINTrackingReport.resx">
+      <DependentUpon>rptGINTrackingReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGrading.resx">
+      <DependentUpon>rptGrading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGradingFactorsResultReport.resx">
+      <DependentUpon>rptGradingFactorsResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGradingNew.resx">
+      <DependentUpon>rptGradingNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGRN.resx">
+      <DependentUpon>rptGRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGRNnew.resx">
+      <DependentUpon>rptGRNnew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGRNPreApproval.resx">
+      <DependentUpon>rptGRNPreApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGRNService.resx">
+      <DependentUpon>rptGRNService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInventoryBalance.resx">
+      <DependentUpon>rptInventoryBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInventoryTransfer.resx">
+      <DependentUpon>rptInventoryTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptInvTransferLICResign.resx">
+      <DependentUpon>rptInvTransferLICResign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPUNTrackingReport.resx">
+      <DependentUpon>rptPUNTrackingReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptResultReport.resx">
+      <DependentUpon>rptResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSampleTicketCoffee.resx">
+      <DependentUpon>rptSampleTicketCoffee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSampleTicketCoffeeNew.resx">
+      <DependentUpon>rptSampleTicketCoffeeNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSamplingResult.resx">
+      <DependentUpon>rptSamplingResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSegrigationGradingReport.resx">
+      <DependentUpon>rptSegrigationGradingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptStockBalance.resx">
+      <DependentUpon>rptStockBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSubInvTransferDetail.resx">
+      <DependentUpon>rptSubInvTransferDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTest.resx">
+      <DependentUpon>rptTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTrackingReport.resx">
+      <DependentUpon>rptTrackingReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptGraders.resx">
+      <DependentUpon>rptGraders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptWBServiceProvider.resx">
+      <DependentUpon>rptWBServiceProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptConsignment.resx">
+      <DependentUpon>rptConsignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGINApproval.resx">
+      <DependentUpon>rptGINApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGINReport.resx">
+      <DependentUpon>rptGINReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptInspectionTestResult.resx">
+      <DependentUpon>rptInspectionTestResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptInspectionTestResultDetail.resx">
+      <DependentUpon>rptInspectionTestResultDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptPickupNoticeExpiredList.resx">
+      <DependentUpon>rptPickupNoticeExpiredList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptPSAReport.resx">
+      <DependentUpon>rptPSAReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptPUNReport.resx">
+      <DependentUpon>rptPUNReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptStackBalance.resx">
+      <DependentUpon>rptStackBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSubGIN.resx">
+      <DependentUpon>rptSubGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSUBGINScale.resx">
+      <DependentUpon>rptSUBGINScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSubGINStackBalance.resx">
+      <DependentUpon>rptSubGINStackBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSubPSA.resx">
+      <DependentUpon>rptSubPSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSubPSAApproval.resx">
+      <DependentUpon>rptSubPSAApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSubPUNWRReport.resx">
+      <DependentUpon>rptSubPUNWRReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSubStockBalance.resx">
+      <DependentUpon>rptSubStockBalance.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6674</DevelopmentServerPort>
+          <DevelopmentServerVPath>/WarehouseApplication</DevelopmentServerVPath>
+          <IISUrl>http://localhost/WarehouseApplication/WarehouseApplication</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

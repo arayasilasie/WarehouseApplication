@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Inbox>
+  <InboxItem Name="Update Client Id">
+    <TransactionCode FlowName="WRNC"  StepName="UpdateClientNo" Right="WHRCDR" Step="1"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Driver Information">
+    <TransactionCode FlowName="WRC"  StepName="AddDriverInformation" Right="WHRDI" Step="1"></TransactionCode>
+    <TransactionCode FlowName="WRG"  StepName="AddDriverInformation" Right="WHRDI" Step="1"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddDriverInformation" Right="WHRDI" Step="2"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Voucher Information">
+    <TransactionCode FlowName="WRC"  StepName="AddVoucherInfo" Right="WHRVI" Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddVoucherInfo" Right="WHRVI" Step="3"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Select Trucks For Sampling">
+    <TransactionCode FlowName="WRC"  StepName="GetTrucksReadyForSam" Right="WHGetTrucksSam" Step="3"></TransactionCode>
+    <TransactionCode FlowName="WRG"  StepName="GetTrucksReadyForSam" Right="WHGetTrucksSam" Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="GetTrucksReadyForSam" Right="WHGetTrucksSam" Step="4"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Confirm Trucks For Sampling">
+    <TransactionCode FlowName="WRC"  StepName="ConfirmTrucksForSamp" Right="WHConfTruckSamp" Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRG"  StepName="ConfirmTrucksForSamp" Right="WHConfTruckSamp" Step="3"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="ConfirmTrucksForSamp" Right="WHConfTruckSamp" Step="5"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Assign Sampler">
+    <TransactionCode FlowName="WRC" StepName="GetSampleTicket" Right="WHRST"  Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="GetSampleTicket" Right="WHRST"  Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="GetSampleTicket" Right="WHRST"  Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="GetSampleTicket" Right="WHRST" Step="6"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Record Sampling Findings">
+    <TransactionCode FlowName="WRC" StepName="AddSamplingResult" Right="WHRSR"  Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddSamplingResult" Right="WHRSR"  Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddSamplingResult" Right="WHRSR"  Step="3"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddSamplingResult" Right="WHRSR" Step="1"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddSamplingResult" Right="WHRSR" Step="7"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Generate Code For Lab. Test">
+    <TransactionCode FlowName="WRC" StepName="GenerateGradingCode" Right="WHRGC" Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRCGD"  StepName="GenerateGradingCode" Right="WHRGC" Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="GenerateGradingCode" Right="WHRGC" Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="GenerateGradingCode" Right="WHRGC" Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="GenerateGradingCode" Right="WHRGC" Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="GenerateGradingCode" Right="WHRGC" Step="8"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Receive Sample Code">
+    <TransactionCode FlowName="WRC" StepName="CodeSampRec" Right="WHCodeSampRec" Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="CodeSampRec" Right="WHCodeSampRec" Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="CodeSampRec" Right="WHCodeSampRec" Step="3"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="CodeSampRec" Right="WHCodeSampRec" Step="9"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Record Grading Result">
+    <TransactionCode FlowName="WRC" StepName="AddGradingResult" Right="WHRGR" Step="9"></TransactionCode>
+    <TransactionCode FlowName="WRCGD"  StepName="EditGradingResult" Right="WHEditGradeReceived" Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddGradingResult" Right="WHRGR" Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddGradingResult" Right="WHRGR" Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddGradingResult" Right="WHRGR" Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddGradingResult" Right="WHRGR" Step="10"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Record Client Response">
+    <TransactionCode FlowName="WRC" StepName="GradingResultCA" Right="WHRGRA" Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCGD"  StepName="GradingResultCA" Right="WHRGRA" Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="GradingResultCA" Right="WHRGRA" Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="GradingResultCA" Right="WHRGRA" Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="GradingResultCA" Right="WHRGRA" Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="GradingResultCA" Right="WHRGRA" Step="11"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Pre-Weigh Truck">
+    <TransactionCode FlowName="WRC" StepName="AddUnloadingInfo" Right="WHRUI"  Step="12"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="PreWeighTruck" Right="WHPWT"  Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="AddUnloadingInfo" Right="WHRUI"  Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddUnloadingInfo" Right="WHRUI"  Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="PreWeighTruck" Right="WHPWT"  Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddUnloadingInfo" Right="WHRUI"  Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddUnloadingInfo" Right="WHRUI" Step="9"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddUnloadingInfo" Right="WHRUI" Step="13"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Unload and Record Deposit">
+    <TransactionCode FlowName="WRC" StepName="AddUnloadingInfo" Right="WHRUI"  Step="12"></TransactionCode>
+    <TransactionCode FlowName="WRC" StepName="PreWeighTruck" Right="WHPWT"  Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="PreWeighTruck" Right="WHPWT" Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="AddUnloadingInfo" Right="WHRUI"  Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddUnloadingInfo" Right="WHRUI" Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="PreWeighTruck" Right="WHPWT"  Step="6"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddUnloadingInfo" Right="WHRUI"  Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="PreWeighTruck" Right="WHRUI" Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddUnloadingInfo" Right="WHRUI" Step="9"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddUnloadingInfo" Right="WHRUI" Step="13"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Post-Weigh Truck">
+    <TransactionCode FlowName="WRC" StepName="AddScalingInfo" Right="WHPostWT"  Step="14"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="PostWeighTruck" Right="WHPostWT" Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="AddScalingInfo" Right="WHPostWT"  Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddScalingInfo" Right="WHRSI" Step="12"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="PostWeighTruck" Right="WHPostWT"  Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddScalingInfo" Right="WHRSI"  Step="9"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="PostWeighTruck" Right="WHPostWT" Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddScalingInfo" Right="WHPostWT" Step="11"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddScalingInfo" Right="WHPostWT" Step="15"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Enter Weight Data">
+    <TransactionCode FlowName="WRC" StepName="AddScalingInfo" Right="WHRSI"  Step="14"></TransactionCode>
+    <TransactionCode FlowName="WRC" StepName="PostWeighTruck" Right="WHPostWT"  Step="12"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="PostWeighTruck" Right="WHPostWT"  Step="7"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="AddScalingInfo" Right="WHPostWT"  Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddScalingInfo" Right="WHRSI" Step="12"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="PostWeighTruck" Right="WHPostWT"  Step="8"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddScalingInfo" Right="WHRSI"  Step="9"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="PostWeighTruck" Right="WHPostWT" Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddScalingInfo" Right="WHPostWT" Step="11"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddScalingInfo" Right="WHPostWT" Step="15"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Create GRN and Print GRN">
+    <TransactionCode FlowName="WRC" StepName="AddGRN" Right="WHRCGRN"  Step="15"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="AddGRN" Right="WHRCGRN"  Step="9"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="AddGRN" Right="WHRCGRN" Step="13"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddGRN" Right="WHRCGRN"  Step="13"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="AddGRN" Right="WHRCGRN"  Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="AddGRN" Right="WHRCGRN" Step="12"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="AddGRN" Right="WHRCGRN" Step="16"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Record GRN Client Response">
+    <TransactionCode FlowName="WRC" StepName="GRNAcceptance" Right="WHRGRNA" Step="16"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="GRNAcceptance" Right="WHRGRNA" Step="10"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="GRNAcceptance" Right="WHRGRNA"  Step="14"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="GRNAcceptance" Right="WHRGRNA" Step="11"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="GRNAcceptance" Right="WHRGRNA" Step="13"></TransactionCode>
+    <TransactionCode FlowName="WHEditAppGRN"  StepName="GRNAcceptance" Right="WHRGRNA" Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="GRNAcceptance" Right="WHRGRNA" Step="17"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Approve GRN">
+    <TransactionCode FlowName="WRC" StepName="EditGRN" Right="WHRGRNAP" Step="17"></TransactionCode>
+    <TransactionCode FlowName="WRG" StepName="EditGRN" Right="WHRGRNAP" Step="15"></TransactionCode>
+    <TransactionCode FlowName="WRCM" StepName="EditGRN" Right="WHRGRNAP" Step="12"></TransactionCode>
+    <TransactionCode FlowName="WHEditAppGRN"  StepName="WarehouseManagerAppr" Right="WHRGRNAP" Step="5"></TransactionCode>
+    <TransactionCode FlowName="WRCRS" StepName="EditGRN" Right="WHRGRNAP" Step="14"></TransactionCode>
+    <TransactionCode FlowName="WRCGD" StepName="EditGRN" Right="WHRGRNAP" Step="11"></TransactionCode>
+    <TransactionCode FlowName="WRNC"  StepName="EditGRN" Right="WHRGRNAP" Step="18"></TransactionCode>
+  </InboxItem>
+</Inbox>

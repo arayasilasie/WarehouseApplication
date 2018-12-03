@@ -1,0 +1,673 @@
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\bin\WarehouseApplication.dll
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\bin\WarehouseApplication.pdb
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\GenerateResource.read.1.tlog
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\GenerateResource.write.1.tlog
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+D:\ecx applications\ECX_WH_ApplicationV2_Team_Project\Main\Source\WareHouseApplicationV2\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\bin\WarehouseApplication.dll
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\Users\esayas.berhanu\Desktop\All Apps\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\bin\WarehouseApplication.dll
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\Users\arayasilasie.bogale\Desktop\FromProduction\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\bin\WarehouseApplication.dll
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\inetpub\wwwroot\WHAPPv2\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\bin\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\from production\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\bin\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\4-25-2017\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\bin\WarehouseApplication.dll
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\bin\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\5-29-2017\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\bin\WarehouseApplication.dll
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\6-8-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\bin\WarehouseApplication.dll
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\13 Jan 2017\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+E:\TG files\WarehouseApplication\bin\WarehouseApplication.dll
+E:\TG files\WarehouseApplication\bin\WarehouseApplication.pdb
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+E:\TG files\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\bin\WarehouseApplication.dll
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\inetpub\wwwroot\WHR_GIN\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\bin\WarehouseApplication.dll
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\inetpub\wwwroot\13 Jan 2017\Aug-23-2017\WarehouseApplication\obj\Debug\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\bin\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\bin\WarehouseApplication.pdb
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.csprojResolveAssemblyReference.cache
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.CoffeeCodingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.GradingResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGenerate.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGrading.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingFactorsResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGradingNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNnew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNPreApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGRNService.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInventoryTransfer.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptInvTransferLICResign.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptResultReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffee.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSampleTicketCoffeeNew.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.rptSamplingResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSegrigationGradingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubInvTransferDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptTest.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.rptTrackingReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGraders.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptWBServiceProvider.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptConsignment.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptGINApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptGINReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResult.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptInspectionTestResultDetail.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPickupNoticeExpiredList.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPSAReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptPUNReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGIN.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSUBGINScale.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubGINStackBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSA.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Report.rptSubPSAApproval.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubPUNWRReport.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.Reports.rptSubStockBalance.resources
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.csproj.GenerateResource.Cache
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.dll.licenses
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.dll
+C:\Users\Arayasilasie.Bogale\Desktop\WarehouseApplication\obj\Debug\WarehouseApplication.pdb

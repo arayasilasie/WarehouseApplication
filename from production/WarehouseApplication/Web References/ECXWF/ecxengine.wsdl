@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="OpenTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionTypeGuid" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="CreatedBy" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationCode" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="SystemLocation" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OpenTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenTransactionResult" type="tns:ArrayOfCMessage" />
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CMessage" nillable="true" type="tns:CMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsForm" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Locked" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LockedTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsEditMode" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCompleted" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rights" type="tns:ArrayOfString" />
+          <s:element minOccurs="1" maxOccurs="1" name="LockedBy" type="s1:guid" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTransactionsByTaskName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionTypeCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Step" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionsByTaskNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionsByTaskNameResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfTransactionsByTaskName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionTypeCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListOfTransactionsByTaskNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListOfTransactionsByTaskNameResult" type="tns:ArrayOfCTaskNameWithTranAndStartDate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCTaskNameWithTranAndStartDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTaskNameWithTranAndStartDate" nillable="true" type="tns:CTaskNameWithTranAndStartDate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTaskNameWithTranAndStartDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionAndStartDate" type="tns:ArrayOfCTransactionAndStartDate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCTransactionAndStartDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTransactionAndStartDate" nillable="true" type="tns:CTransactionAndStartDate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTransactionAndStartDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartingDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTransactionsByTaskNameWithCreatedTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionTypeCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Step" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionsByTaskNameWithCreatedTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionsByTaskNameWithCreatedTimeResult" type="tns:ArrayOfCTransactionWithCreatedTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCTransactionWithCreatedTime">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTransactionWithCreatedTime" nillable="true" type="tns:CTransactionWithCreatedTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTransactionWithCreatedTime">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RemoveTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveTransactionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Request">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedUser" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationCode" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequestResult" type="tns:ArrayOfCMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="tns:CMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResponseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ResponseResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApplicationId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransactionTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTransactionTypesResult" type="tns:ArrayOfCTransactionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCTransactionType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTransactionType" nillable="true" type="tns:CTransactionType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTransactionType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UniqueIdentifier" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplicationId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="XMLFile" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetActiveTransactionTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApplicationId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveTransactionTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveTransactionTypesResult" type="tns:ArrayOfCTransactionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllTransactionTypes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTransactionTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTransactionTypesResult" type="tns:ArrayOfCTransactionType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActiveApplications">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetActiveApplicationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActiveApplicationsResult" type="tns:ArrayOfCApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCApplication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CApplication" nillable="true" type="tns:CApplication" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CApplication">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UniqueIdentifier" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EditRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsForm" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedUser" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationCode" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditRequestResult" type="tns:CMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="tns:CMessage" />
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedUser" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationCode" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditResponseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditResponseResult" type="tns:ArrayOfCMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseTransactionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UnlockTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockTaskResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UnlockSpecificTransactionTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockSpecificTransactionTaskResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UnlockMessageByUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedUser" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockMessageByUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UnlockAllMessageByUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserGuid" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockAllMessageByUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UnlockAllMessagePassedDuration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Minute" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockAllMessagePassedDurationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RemoveTransactionFromStack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveTransactionFromStackResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Close">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedUser" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CloseTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="tns:CMessage" />
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedUser" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseTaskResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTransactionWithLockedMessages">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTransactionWithLockedMessagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTransactionWithLockedMessagesResult" type="tns:ArrayOfSCTransaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSCTransaction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SCTransaction" nillable="true" type="tns:SCTransaction" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SCTransaction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Messages" type="tns:ArrayOfCMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProgressByTaskName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TaskName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgressByTaskNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProgressByTaskNameResult" type="tns:ArrayOfCSingleTaskProgress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCSingleTaskProgress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CSingleTaskProgress" nillable="true" type="tns:CSingleTaskProgress" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CSingleTaskProgress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Task" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompletedDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProgressByTaskNames">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FromTask" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToTask" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgressByTaskNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProgressByTaskNamesResult" type="tns:ArrayOfCMultipleTaskProgress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCMultipleTaskProgress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CMultipleTaskProgress" nillable="true" type="tns:CMultipleTaskProgress" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CMultipleTaskProgress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FromTask" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToTask" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompletedDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="NoOfDays" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OpenTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenTransaction" />
+  </wsdl:message>
+  <wsdl:message name="OpenTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionsByTaskNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByTaskName" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionsByTaskNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByTaskNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfTransactionsByTaskNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListOfTransactionsByTaskName" />
+  </wsdl:message>
+  <wsdl:message name="GetListOfTransactionsByTaskNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListOfTransactionsByTaskNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionsByTaskNameWithCreatedTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByTaskNameWithCreatedTime" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionsByTaskNameWithCreatedTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByTaskNameWithCreatedTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveTransaction" />
+  </wsdl:message>
+  <wsdl:message name="RemoveTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestSoapIn">
+    <wsdl:part name="parameters" element="tns:Request" />
+  </wsdl:message>
+  <wsdl:message name="RequestSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResponseSoapIn">
+    <wsdl:part name="parameters" element="tns:Response" />
+  </wsdl:message>
+  <wsdl:message name="ResponseSoapOut">
+    <wsdl:part name="parameters" element="tns:ResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransactionTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetTransactionTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransactionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveTransactionTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveTransactionTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveTransactionTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveTransactionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTransactionTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTransactionTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTransactionTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTransactionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveApplicationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActiveApplications" />
+  </wsdl:message>
+  <wsdl:message name="GetActiveApplicationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActiveApplicationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:EditRequest" />
+  </wsdl:message>
+  <wsdl:message name="EditRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:EditRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditResponseSoapIn">
+    <wsdl:part name="parameters" element="tns:EditResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditResponseSoapOut">
+    <wsdl:part name="parameters" element="tns:EditResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:CloseTransaction" />
+  </wsdl:message>
+  <wsdl:message name="CloseTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnlockTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:UnlockTask" />
+  </wsdl:message>
+  <wsdl:message name="UnlockTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:UnlockTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnlockSpecificTransactionTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:UnlockSpecificTransactionTask" />
+  </wsdl:message>
+  <wsdl:message name="UnlockSpecificTransactionTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:UnlockSpecificTransactionTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnlockMessageByUserSoapIn">
+    <wsdl:part name="parameters" element="tns:UnlockMessageByUser" />
+  </wsdl:message>
+  <wsdl:message name="UnlockMessageByUserSoapOut">
+    <wsdl:part name="parameters" element="tns:UnlockMessageByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnlockAllMessageByUserSoapIn">
+    <wsdl:part name="parameters" element="tns:UnlockAllMessageByUser" />
+  </wsdl:message>
+  <wsdl:message name="UnlockAllMessageByUserSoapOut">
+    <wsdl:part name="parameters" element="tns:UnlockAllMessageByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnlockAllMessagePassedDurationSoapIn">
+    <wsdl:part name="parameters" element="tns:UnlockAllMessagePassedDuration" />
+  </wsdl:message>
+  <wsdl:message name="UnlockAllMessagePassedDurationSoapOut">
+    <wsdl:part name="parameters" element="tns:UnlockAllMessagePassedDurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveTransactionFromStackSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveTransactionFromStack" />
+  </wsdl:message>
+  <wsdl:message name="RemoveTransactionFromStackSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveTransactionFromStackResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseSoapIn">
+    <wsdl:part name="parameters" element="tns:Close" />
+  </wsdl:message>
+  <wsdl:message name="CloseSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:CloseTask" />
+  </wsdl:message>
+  <wsdl:message name="CloseTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTransactionWithLockedMessagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTransactionWithLockedMessages" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTransactionWithLockedMessagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTransactionWithLockedMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProgressByTaskNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProgressByTaskName" />
+  </wsdl:message>
+  <wsdl:message name="GetProgressByTaskNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProgressByTaskNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProgressByTaskNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProgressByTaskNames" />
+  </wsdl:message>
+  <wsdl:message name="GetProgressByTaskNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProgressByTaskNamesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ECXEngineSoap">
+    <wsdl:operation name="OpenTransaction">
+      <wsdl:input message="tns:OpenTransactionSoapIn" />
+      <wsdl:output message="tns:OpenTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByTaskName">
+      <wsdl:input message="tns:GetTransactionsByTaskNameSoapIn" />
+      <wsdl:output message="tns:GetTransactionsByTaskNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfTransactionsByTaskName">
+      <wsdl:input message="tns:GetListOfTransactionsByTaskNameSoapIn" />
+      <wsdl:output message="tns:GetListOfTransactionsByTaskNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByTaskNameWithCreatedTime">
+      <wsdl:input message="tns:GetTransactionsByTaskNameWithCreatedTimeSoapIn" />
+      <wsdl:output message="tns:GetTransactionsByTaskNameWithCreatedTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransaction">
+      <wsdl:input message="tns:RemoveTransactionSoapIn" />
+      <wsdl:output message="tns:RemoveTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Request">
+      <wsdl:input message="tns:RequestSoapIn" />
+      <wsdl:output message="tns:RequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Response">
+      <wsdl:input message="tns:ResponseSoapIn" />
+      <wsdl:output message="tns:ResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionTypes">
+      <wsdl:input message="tns:GetTransactionTypesSoapIn" />
+      <wsdl:output message="tns:GetTransactionTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTransactionTypes">
+      <wsdl:input message="tns:GetActiveTransactionTypesSoapIn" />
+      <wsdl:output message="tns:GetActiveTransactionTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactionTypes">
+      <wsdl:input message="tns:GetAllTransactionTypesSoapIn" />
+      <wsdl:output message="tns:GetAllTransactionTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveApplications">
+      <wsdl:input message="tns:GetActiveApplicationsSoapIn" />
+      <wsdl:output message="tns:GetActiveApplicationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditRequest">
+      <wsdl:input message="tns:EditRequestSoapIn" />
+      <wsdl:output message="tns:EditRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditResponse">
+      <wsdl:input message="tns:EditResponseSoapIn" />
+      <wsdl:output message="tns:EditResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseTransaction">
+      <wsdl:input message="tns:CloseTransactionSoapIn" />
+      <wsdl:output message="tns:CloseTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnlockTask">
+      <wsdl:input message="tns:UnlockTaskSoapIn" />
+      <wsdl:output message="tns:UnlockTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnlockSpecificTransactionTask">
+      <wsdl:input message="tns:UnlockSpecificTransactionTaskSoapIn" />
+      <wsdl:output message="tns:UnlockSpecificTransactionTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnlockMessageByUser">
+      <wsdl:input message="tns:UnlockMessageByUserSoapIn" />
+      <wsdl:output message="tns:UnlockMessageByUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnlockAllMessageByUser">
+      <wsdl:input message="tns:UnlockAllMessageByUserSoapIn" />
+      <wsdl:output message="tns:UnlockAllMessageByUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnlockAllMessagePassedDuration">
+      <wsdl:input message="tns:UnlockAllMessagePassedDurationSoapIn" />
+      <wsdl:output message="tns:UnlockAllMessagePassedDurationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransactionFromStack">
+      <wsdl:input message="tns:RemoveTransactionFromStackSoapIn" />
+      <wsdl:output message="tns:RemoveTransactionFromStackSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <wsdl:input message="tns:CloseSoapIn" />
+      <wsdl:output message="tns:CloseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseTask">
+      <wsdl:input message="tns:CloseTaskSoapIn" />
+      <wsdl:output message="tns:CloseTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactionWithLockedMessages">
+      <wsdl:input message="tns:GetAllTransactionWithLockedMessagesSoapIn" />
+      <wsdl:output message="tns:GetAllTransactionWithLockedMessagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgressByTaskName">
+      <wsdl:input message="tns:GetProgressByTaskNameSoapIn" />
+      <wsdl:output message="tns:GetProgressByTaskNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgressByTaskNames">
+      <wsdl:input message="tns:GetProgressByTaskNamesSoapIn" />
+      <wsdl:output message="tns:GetProgressByTaskNamesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ECXEngineSoap" type="tns:ECXEngineSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenTransaction">
+      <soap:operation soapAction="http://tempuri.org/OpenTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByTaskName">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionsByTaskName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfTransactionsByTaskName">
+      <soap:operation soapAction="http://tempuri.org/GetListOfTransactionsByTaskName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByTaskNameWithCreatedTime">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionsByTaskNameWithCreatedTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransaction">
+      <soap:operation soapAction="http://tempuri.org/RemoveTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Request">
+      <soap:operation soapAction="http://tempuri.org/Request" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Response">
+      <soap:operation soapAction="http://tempuri.org/Response" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionTypes">
+      <soap:operation soapAction="http://tempuri.org/GetTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTransactionTypes">
+      <soap:operation soapAction="http://tempuri.org/GetActiveTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactionTypes">
+      <soap:operation soapAction="http://tempuri.org/GetAllTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveApplications">
+      <soap:operation soapAction="http://tempuri.org/GetActiveApplications" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditRequest">
+      <soap:operation soapAction="http://tempuri.org/EditRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditResponse">
+      <soap:operation soapAction="http://tempuri.org/EditResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseTransaction">
+      <soap:operation soapAction="http://tempuri.org/CloseTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockTask">
+      <soap:operation soapAction="http://tempuri.org/UnlockTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockSpecificTransactionTask">
+      <soap:operation soapAction="http://tempuri.org/UnlockSpecificTransactionTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockMessageByUser">
+      <soap:operation soapAction="http://tempuri.org/UnlockMessageByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockAllMessageByUser">
+      <soap:operation soapAction="http://tempuri.org/UnlockAllMessageByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockAllMessagePassedDuration">
+      <soap:operation soapAction="http://tempuri.org/UnlockAllMessagePassedDuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransactionFromStack">
+      <soap:operation soapAction="http://tempuri.org/RemoveTransactionFromStack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <soap:operation soapAction="http://tempuri.org/Close" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseTask">
+      <soap:operation soapAction="http://tempuri.org/CloseTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactionWithLockedMessages">
+      <soap:operation soapAction="http://tempuri.org/GetAllTransactionWithLockedMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgressByTaskName">
+      <soap:operation soapAction="http://tempuri.org/GetProgressByTaskName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgressByTaskNames">
+      <soap:operation soapAction="http://tempuri.org/GetProgressByTaskNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ECXEngineSoap12" type="tns:ECXEngineSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenTransaction">
+      <soap12:operation soapAction="http://tempuri.org/OpenTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByTaskName">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionsByTaskName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfTransactionsByTaskName">
+      <soap12:operation soapAction="http://tempuri.org/GetListOfTransactionsByTaskName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByTaskNameWithCreatedTime">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionsByTaskNameWithCreatedTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransaction">
+      <soap12:operation soapAction="http://tempuri.org/RemoveTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Request">
+      <soap12:operation soapAction="http://tempuri.org/Request" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Response">
+      <soap12:operation soapAction="http://tempuri.org/Response" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionTypes">
+      <soap12:operation soapAction="http://tempuri.org/GetTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveTransactionTypes">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactionTypes">
+      <soap12:operation soapAction="http://tempuri.org/GetAllTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveApplications">
+      <soap12:operation soapAction="http://tempuri.org/GetActiveApplications" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditRequest">
+      <soap12:operation soapAction="http://tempuri.org/EditRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditResponse">
+      <soap12:operation soapAction="http://tempuri.org/EditResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseTransaction">
+      <soap12:operation soapAction="http://tempuri.org/CloseTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockTask">
+      <soap12:operation soapAction="http://tempuri.org/UnlockTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockSpecificTransactionTask">
+      <soap12:operation soapAction="http://tempuri.org/UnlockSpecificTransactionTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockMessageByUser">
+      <soap12:operation soapAction="http://tempuri.org/UnlockMessageByUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockAllMessageByUser">
+      <soap12:operation soapAction="http://tempuri.org/UnlockAllMessageByUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockAllMessagePassedDuration">
+      <soap12:operation soapAction="http://tempuri.org/UnlockAllMessagePassedDuration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTransactionFromStack">
+      <soap12:operation soapAction="http://tempuri.org/RemoveTransactionFromStack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Close">
+      <soap12:operation soapAction="http://tempuri.org/Close" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseTask">
+      <soap12:operation soapAction="http://tempuri.org/CloseTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactionWithLockedMessages">
+      <soap12:operation soapAction="http://tempuri.org/GetAllTransactionWithLockedMessages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgressByTaskName">
+      <soap12:operation soapAction="http://tempuri.org/GetProgressByTaskName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgressByTaskNames">
+      <soap12:operation soapAction="http://tempuri.org/GetProgressByTaskNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ECXEngine">
+    <wsdl:port name="ECXEngineSoap" binding="tns:ECXEngineSoap">
+      <soap:address location="http://10.1.5.20:5001/ECXEngine/ECXEngine.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ECXEngineSoap12" binding="tns:ECXEngineSoap12">
+      <soap12:address location="http://10.1.5.20:5001/ECXEngine/ECXEngine.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

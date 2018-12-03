@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Inbox>
+  <InboxItem Name="Pending Cancelltion">
+    <TransactionCode FlowName="CancelApprovedGRN"  StepName="CancelGRN" Right="WHCancelGRN" Step="1"></TransactionCode>
+  </InboxItem>
+</Inbox>

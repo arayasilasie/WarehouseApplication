@@ -1,0 +1,9 @@
+.messages {width:98%; padding:5px; margin-left:3px;}
+.messages-logo {height:32px; width:32px; float:left; background:url(Images/message_logos.png)}
+.messages-text {margin-left:40px; padding:6px 0}
+.messages-error {background-color:#fbe3e4; color:#d12f19; border:solid 1px #fbc2c4}
+.messages-error .messages-logo {background-position:-64px 0}
+.messages-warning {background-color:#faffcf; color:#5e5f00; border:solid 1px #edef00}
+.messages-warning .messages-logo {background-position:-32px 0}
+.messages-success {background-color:#e0efd1; color:#003300; border:solid 1px #a5cc7a}
+.messages-success .messages-logo {background-position:0 0}

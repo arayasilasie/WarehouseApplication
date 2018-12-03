@@ -1,0 +1,328 @@
+﻿/*Default Styles*/
+body
+{
+	/*background-image: url(../Images/bg.gif);*/
+	background-color: #e4efd0;
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 0.9em;
+}
+
+h1
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 1.0em;
+	color: Black;
+}
+
+h2
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 1.0em;
+	color: Yellow;
+}
+
+h3
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 1.0em;
+	color: Green;
+}
+
+a
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 0.9em;
+}
+
+a:link
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 0.9em;
+}
+
+fieldset
+{
+	padding: 5px 0 5px 0;
+	margin: 5px 0 5px 0;
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 0.9em;
+	color: Black;
+}
+
+legend
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 1.0em;
+	color: Black;
+}
+
+table
+{
+	text-align: left;
+	font-size: 12px;
+}
+
+th
+{
+	text-align: left;
+}
+
+thead
+{
+	background-color: #6A7C49;
+	font-size: small;
+	font-weight: bold;
+	color: White;
+	font-family: Verdana;
+	border-color: Fuchsia;
+}
+
+tbody tr
+{
+	border-bottom: 1pt solid gray;
+}
+
+hr
+{
+	border: solid 1px gray;
+}
+
+select
+{
+	width: 150px;
+}
+
+.CheckBoxList
+{
+}
+
+.CheckBoxList.input
+{
+	width: 20px;
+}
+
+.GridviewAlternatingRow
+{
+	background-color: White;
+	color: Black;
+	font-size: small;
+	font-family: Verdana;
+	border-color: Fuchsia;
+}
+.GridviewEditRow
+{
+	background-color: Gray;
+	color: Black;
+	font-size: small;
+	font-family: Verdana;
+	border-color: Fuchsia;
+}
+.GridviewRow
+{
+	background-color: #FFFBD6;
+	color: Black;
+	font-size: small;
+	font-family: Verdana;
+	border-color: Fuchsia;
+}
+.GridRow
+{
+	background-color: White;
+	color: Black;
+	font-size: small;
+	font-family: Verdana;
+	border-color: Fuchsia;
+}
+
+.GridviewHeader
+{
+	background-color: #6A7C49;
+	font-size: small;
+	font-weight: bold;
+	color: White;
+	font-family: Verdana;
+}
+.GridviewFooter
+{
+	background-color: #FFCC66;
+	font-size: small;
+	font-weight: bold;
+	color: #333333;
+	font-family: Verdana;
+}
+.GridviewSelectedRow
+{
+	background-color:#FBE49F;
+	color: #333333;
+	font-weight: bold;
+	font-size: small;
+	font-family: Verdana;
+}
+.GridviewPager
+{
+	/*background-color:#FFCC66;*/
+	color: White;
+	text-align: center;
+	font-size: small;
+	font-family: Verdana;
+}
+.GridviewInsert
+{
+	/*background-color:#FFCC66;*/
+	color: Black;
+	text-align: center;
+	font-size: small;
+	font-family: Verdana;
+}
+.DialogBoxContainer
+{
+	border-style: outset;
+	background-color: ActiveBorder;
+	border-color: Black;
+	border-width: 2;
+	font-size: small;
+	font-family: Verdana;
+	/*visibility: hidden;*/
+}
+
+.NormalText
+{
+	font-size: small;
+	font-family: Verdana;
+}
+
+.NumberColumn
+{
+	text-align: center;
+}
+
+.button
+{
+	width: 60px;
+}
+
+.GoButton
+{
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	background-image: url( '../Images/search 9.jpeg' );
+}
+
+.Hidden
+{
+	display: none;
+}
+.NotificationLable
+{
+	background-color: Transparent;
+	color: Green;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: small;
+}
+.ErrorLable
+{
+	background-color: Transparent;
+	color: Red;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: small;
+}
+.PageDescriptionLable
+{
+	background-color: Transparent;
+	color: Black;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: medium;
+}
+
+.DialogPanel
+{
+	width: 800px;
+	background-color: #C0C0C0;
+	border: solid 1px gray;
+}
+
+.DialogTitle
+{
+	height: 20px;
+	background-color: Gray;
+	font-weight: bold;
+	padding: 5px 0px 0px 5px;
+}
+
+.GroupBox
+{
+	border: solid 1px gray;
+	padding: 0 5px 0 5px;
+	margin: 5px 5px 0px 5px;
+}
+
+.DialogFooter
+{
+	text-align: right;
+	padding: 0px 5px 5px 5px;
+}
+.Menu
+{
+	font-family: Verdana;
+	background-color: #FFFBD6;
+	font-size: 0.8em;
+	color: #990000;
+	z-index:100;
+}
+.MenuItem
+{
+	padding: 5px 5px 5px 5px;
+	color: Black;
+}
+.MenuSelected
+{
+	background-color: #FFCC66;
+}
+.MenuHover
+{
+	background-color: #990000;
+	color: White;
+}
+.ToolBar
+{
+	height: 24px;
+	background-color: #96b55c;
+	vertical-align: middle;
+	margin: 0 0 0 0;
+}
+.ToolBar.a
+{
+	color: Black;
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 1.0em;
+}
+.ErrorDisplay
+{
+	vertical-align: middle;
+	text-align: center;
+	color: Red;
+	font-family: Verdana;
+	font-size: medium;
+	font-weight: bold;
+}
+.xxxxxx
+{
+    width:100px;
+}
+
+.GridPager
+{
+	background-color:#6A7C49;
+	color:#FFFFFF;
+	text-align:center;
+	font-family:Verdana;
+	font-size:1.0em;
+	border-style:inset;
+	border-width:1px;
+	font-weight:bold;
+	height:15px;
+}

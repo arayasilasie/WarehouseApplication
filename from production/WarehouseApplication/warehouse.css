@@ -1,0 +1,261 @@
+﻿.Table
+{
+	    text-align:left;
+ 		font-family:Verdana;
+		font-size:small;
+}
+.Text 
+   {
+    text-align:left;
+    font-family:Verdana;
+    font-size:small;
+    
+   }
+   .TextRequired 
+   {
+    text-align:left;
+    width:auto;
+    font-family:Verdana;
+    font-size:small;
+    font-weight:bold;
+    
+   }
+   .Input
+   {
+   	 text-align:left;
+   	 width:auto;
+   	 font-family:Verdana;
+   	
+   }
+   .Message
+   {
+        text-align:left;
+        font-family:Verdana;
+        font-size: small;
+        color:#CC0000;  
+   }
+   .Button
+   {
+    font-family:Verdana;
+    font-size:medium;
+   }
+	.Editor
+	{
+		background-color:White;
+		width:300Px;
+		font-family:Verdana;
+		font-size:small;
+		border-style:solid;
+		border-color:Black;
+		border-width:1px;
+	}
+	.EditorCaption
+	{
+		background-color:#B8C59E;
+		color:#000000;
+		text-align:left;
+		font-family:Verdana;
+		font-size:small;
+		border-style:inset;
+		border-width:1px;
+		height:25px;
+		font-weight:bold;
+	}
+	.EditorCommand
+	{
+   		font-weight:bold;
+		background-color:#B8C59E;
+		color:#FFFFFF;
+		text-align:center;
+		font-family:Verdana;
+		font-size:small;
+		border-style:inset;
+		border-width:1px;
+		font-weight:bold;
+		height:25px;
+		border-spacing:0px;
+		
+	}
+	.EmbeddedEditor
+	{
+		background-color:White;
+		width:300Px;
+		font-family:Verdana;
+		font-size:small;
+		border-style:solid;
+		border-color:Black;
+		border-width:1px;
+	}
+	.EmbeddedEditorCommand
+	{
+		height:0px;
+		visibility:hidden;
+		font-family:Verdana;
+		font-size:small;
+	}
+	.EmbeddedEditorCaption
+	{
+		background-color:#B8C59E;
+		color:#000000;
+		text-align:left;
+		font-family:Verdana;
+		font-size:small;
+		border-style:inset;
+		border-width:1px;
+		height:25px;
+		font-weight:bold;
+	}
+	.PreviewEditor
+	{
+		background-color:White;
+		width:300Px;
+		font-family:Verdana;
+		font-size:small;
+		border-style:solid;
+		border-color:Black;
+		border-width:1px;
+	}
+	.PreviewEditorCaption
+	{
+		
+		background-color:#B8C59E;
+		color:#000000;
+		text-align:left;
+		font-family:Verdana;
+		font-size:small;
+		border-style:inset;
+		border-width:1px;
+		font-weight:bold;
+		height:25px;
+
+	}
+	.PreviewEditorCommand
+	{
+		visibility:hidden;
+		font-family:Verdana;
+		font-size:small;
+	}
+	.GridEmpty
+	{
+		border-color:Black;
+		font-family:Verdana;
+		font-size:small;
+		border-width:0px;
+		border-style:solid;
+	}
+	.Grid
+	{
+		
+		border-color:Black;
+		font-family:Verdana;
+		font-size:small;
+		border-width:1px;
+		border-style:solid;
+		
+	}
+	.GridHeader
+	{
+		background-color: #6A7C49;
+		font-size: small;
+		font-weight: bold;
+		color: White;
+		font-family: Verdana;
+	}
+	
+	.GridRow
+	{
+		background-color: white;
+		color: Black;
+		font-size:small;
+		font-family: Verdana;
+		
+	}
+
+	.GridAlternate
+	{
+		background-color: #FFFBD6;
+		color: Black;
+		font-size:small;
+		font-family: Verdana;
+	}
+	
+	.EditorAlternate
+{
+	background-color: #E4EADB;
+	font-family: Verdana;
+	font-size: small;
+	height: 20px;
+}
+	.GridPager
+	{
+		background-color:#6A7C49;
+		color:#FFFFFF;
+		text-align:center;
+		font-family:Verdana;
+		font-size:small;
+		border-style:inset;
+		border-width:1px;
+		font-weight:bold;
+		height:15px;
+	}
+	.GridSelectedRow
+	{
+		background-color:#FBE49F;
+		color:#333333;
+		text-align:center;
+		font-family:Verdana;
+		font-size:small;
+		border-style:none;
+		border-width:0px;
+		font-weight:bold;
+	}
+    .ModalBackgroundStyle
+	{
+	  background-color: #f3f3f3;
+	  filter: alpha(opacity=50);
+	  opacity: 0.5;
+	}
+   
+        
+fieldset
+{
+	padding: 5px 0 5px 0;
+	margin: 5px 0 5px 0;
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: small;
+	color: Black;
+}
+
+legend
+{
+	font-family: Verdana, Tahoma, Times New Roman;
+	font-size: 1.1em;
+	color: Black;
+}
+.Menu
+{
+	font-family: Verdana;
+	background-color: #FFFBD6;
+	font-size: small;
+	color: #990000;
+	z-index:100;
+}
+.MenuItem
+{
+	padding: 5px 5px 5px 5px;
+}
+.MenuSelected
+{
+	background-color: #FFCC66;
+}
+.MenuHover
+{
+	background-color: #990000;
+	color: White;
+}
+.Forbtn
+{
+	margin-bottom: 0px; 
+	width:95px; 
+	height: 26px;
+}

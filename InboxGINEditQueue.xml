@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Inbox>
+	<InboxItem Name="Approve GIN Editing Request">
+		<TransactionCode FlowName="EditGIN"  StepName="ApproveGINEditingRequest" Right="ApproveGINEditingReq" Step="1"></TransactionCode>
+	</InboxItem>
+	<InboxItem Name="Record Client Response">
+		<TransactionCode FlowName="EditGIN" StepName="RecordClientResponse" Right="WHPAV"  Step="2"></TransactionCode>
+	</InboxItem>
+	<InboxItem Name="Approve GIN">
+		<TransactionCode FlowName="EditGIN" StepName="ApproveGIN" Right="WHPWM" Step="3"></TransactionCode>
+	</InboxItem>
+</Inbox>

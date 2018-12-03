@@ -1,0 +1,242 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pTop.master.cs" Inherits="WarehouseApplication.pTop"
+    EnableViewState="true" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link type="text/css" rel="Shortcut Icon" href="Images/logo.ico">
+    <link href="Styles/ControlsView.css" rel="stylesheet" type="text/css" />
+    <title>ECX Warehouse Application</title>
+    <style type="text/css">
+        .Banner
+        {
+            background-image: url('/Images/Banner.jpg');
+            height: 100px;
+            width: 1000px;
+            text-align: center;
+        }
+        .IEFIX
+        {
+            z-index: 100;
+        }
+        .IE8Fix
+        {
+            z-index: 100;
+        }
+    </style>
+    <link href="warehouse.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #96b55c;">
+    <form id="form1" runat="server" submitdisabledcontrols="false">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table width="100%">
+        <tr>
+            <td align="center">
+                <contenttemplate>
+                <%--background-color:#e4efd0; --%>
+    <div style=" width:1024px; min-height:1500px; background-color:#e4efd0;  border-style:solid; border-width:1px; border-color:Black; 
+                 box-shadow: rgba(0,0,0,0.8) 0 0 10px; -webkit-border-radius: 75px 10px 0px 0px; border-radius: 75px 20px 0px 0px; ">
+      <table border="0">
+        <tr style="height:100px; vertical-align:top;">
+          <td>
+            <table border="0">
+              <tr>
+                <td>
+                  <div class="Banner" style="background-color:White;
+                        box-shadow: 0px -5px 2px; -webkit-border-radius: 58px 10px 0px 0px; border-radius: 58px 10px 0px 0px;">
+                    
+                      <img alt="" src="Images/NewHeader.jpg" 
+                          style="width: 1000px; height: 100px; margin-right:0px;
+                                 box-shadow: 0px -5px 2px; -webkit-border-radius: 58px 10px 0px 0px; border-radius: 58px 10px 0px 0px;" /></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+        <td align="left" style="background-color:White;"> 
+            <asp:Menu ID="mn" runat="server" BackColor="White" SkipLinkText=""
+                DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" 
+                ForeColor="#666666" Orientation="Horizontal" 
+                StaticSubMenuIndent="8px" BorderStyle="None" Font-Underline="True">
+                <StaticSelectedStyle BackColor="White" ForeColor="#7F9556" />
+               <%-- <LevelSubMenuStyles>
+                    <asp:SubMenuStyle Font-Underline="False" />
+                </LevelSubMenuStyles>--%>
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" 
+                    BackColor="White" Font-Size="1em" ForeColor="#6A7C49" />
+                <DynamicHoverStyle BackColor="White" ForeColor="#6A7C49" Font-Bold="True" CssClass="IEFIX" />
+                <DynamicMenuStyle BackColor="#E3EAEB" CssClass="IE8Fix" />
+                <DynamicSelectedStyle BackColor="#1C5E55" CssClass="IE8Fix" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" 
+                    BackColor="White" ForeColor="#6A7C49" />
+                <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/ListInboxNew2.aspx" 
+                        Text="Inbox" Value="Home">
+                    </asp:MenuItem>
+                    <asp:MenuItem 
+                        Text="Arrival" Value="Comm. Deposite Request" 
+                        NavigateUrl="~/PreArrival.aspx">
+            
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Sampling" 
+                        Value="Sampling Ticket" Selectable="False">
+                         <asp:MenuItem NavigateUrl="~/SamplerReassignment.aspx" Text="Sampler Change" 
+                            Value="Sampler Attendance"></asp:MenuItem>
+                            
+                        <asp:MenuItem NavigateUrl="~/EditSamplerAttendance.aspx" Text="Sampler Attendance" 
+                            Value="Sampler Attendance"></asp:MenuItem>
+
+                    </asp:MenuItem>
+                    <asp:MenuItem 
+                        Text=" Grading " Value="Code">
+                         <asp:MenuItem NavigateUrl="~/MapingCommodityClassGrade.aspx" Text="Map Group Factor To Class" Value=""></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="GRN" Value="Search GRN">
+                        <asp:MenuItem NavigateUrl="~/ListGRN.aspx" Text="Search GRN" Value="Add GRN">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="GRNClientSign.aspx" Text="GRN Client Sign" 
+                            Value="GRNClientSign"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/GRNCancellationRequest.aspx" 
+                            Text="GRN Cancellation" Value="GRN Cancellation"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="PUN" Value="GIN">
+                        <asp:MenuItem NavigateUrl="~/SearchPickupNotice.aspx" Text="Search PUN" 
+                            Value="Search PUN"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/GINSearch.aspx" Text="Search GIN" 
+                            Value="Search GIN"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/PickupNoticeExpiredList.aspx" Text="PUN Expired List Report " 
+                            Value="PickupNoticeExpiredList"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/GINApprovalReport.aspx" Text="GIN Approval List Report " 
+                            Value="GINApprovalReport"></asp:MenuItem>
+
+                             <asp:MenuItem NavigateUrl="~/PSAApprove.aspx" Text="PSA Approve " 
+                            Value="PSAApprove"></asp:MenuItem>
+
+                             <asp:MenuItem NavigateUrl="~/ManagerPSAApprove.aspx" Text="Manager PSA Approve " 
+                            Value="Manager PSA Approve"></asp:MenuItem>
+
+
+                            <asp:MenuItem NavigateUrl="~/AssignShed.aspx" Text="Assign Shed" 
+                            Value="Assign Shed"></asp:MenuItem>
+
+                            <asp:MenuItem NavigateUrl="~/SearchPSA.aspx" Text="Search PSA" 
+                            Value="Search PSA"></asp:MenuItem>
+                            
+                           
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/SelectWarehouse.aspx" Text="Current Warehouse" 
+                        Value="Select Current Warehouse">
+                        <asp:MenuItem NavigateUrl="~/AddPhysicalAdddress.aspx" 
+                            Text="Add Physical Address" Value="Add Physical Address"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/StackManagement.aspx" Text="Add Stack" 
+                            Value="Add Stack">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/InventoryTransfering.aspx" Text="Inventory Transfer" 
+                            Value="Inventory Transfer"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ApproveInventoryTransfer.aspx" 
+                            Text="Approve Inventory Transfer"  Value="ApproveInventoryTransfer" ></asp:MenuItem>   
+                        
+                        <asp:MenuItem NavigateUrl="~/InventoryTransferWhenLICResign.aspx" Text="Inventory Transfer When LIC Resign" 
+                            Value="InventoryTransferWhenLICResign"></asp:MenuItem>
+                            
+                        
+                        <asp:MenuItem NavigateUrl="~/ApproveInvTransferLICResign.aspx" 
+                            Text="Approve Inv. Transfer LIC Rsign" Value="ApproveInvTransferLICRsign"></asp:MenuItem>
+                            
+                        
+                        <asp:MenuItem NavigateUrl="~/InventoryControlAdjustment.aspx" 
+                            Text="Inventory Control Adjustment" Value="InventoryControlAdjustment">
+                        </asp:MenuItem>
+                            
+                        
+                        <asp:MenuItem NavigateUrl="~/InventoryControlAdjustmentApprove.aspx" 
+                            Text="Inventory Control Adjustment Approve" 
+                            Value="InventoryControlAdjustmentApprove">
+                        </asp:MenuItem>
+                            
+                        
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/SearchPage.aspx" Text="Search All" 
+                        Value="Search All"></asp:MenuItem>
+                    <asp:MenuItem Text="Reports" Value="Reports">
+
+                        <asp:MenuItem NavigateUrl="~/ReportGRNPreApproval.aspx" Text="GRN Pre Approval" 
+                            Value="GRNPreApproval"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ReportInventoryBalance.aspx" 
+                            Text="Inventory Balance Report" Value="ReportInventoryBalance"></asp:MenuItem>
+                              <asp:MenuItem NavigateUrl="~/ReportStackBalance.aspx" 
+                            Text="Stack Balance Report" Value="Stack Balance Report"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Report_StockBalance.aspx" 
+                           Text="Stock Balance Report" Value="Stock Balance Report"></asp:MenuItem>
+
+                        <asp:MenuItem NavigateUrl="~/Report_WBServiceProvider.aspx" 
+                            Text="WBServiceProvider Report" Value="WBServiceProvider Report"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Admin" Value="Admin">
+                             <asp:MenuItem NavigateUrl="AddCommodityGradingFactor.aspx" Text="Comm. Grade Grading Factor" Value="Comm. Grade Grading Factor">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="WarehouseOperators.aspx" Text="Warehouse Operators" Value="Warehouse Operators">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="ImportWareHouseReceipt.aspx" Text="Import WareHouse Receipt" Value="Import WareHouse Receipt">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="ManageLocations.aspx" Text="Manage Locations" Value="Manage Locations">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="EnablePUNPrint.aspx" Text="Enable PUN Print" Value="Enable PUN Print">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="PickupNoticeExpiredListAdmin.aspx" Text="PUN Expired List" Value="PUN Expired List">
+                            </asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="portal.ecx.com.et?CMD=logoff" Text="Sign Out" 
+                        Value="Sign Out"></asp:MenuItem>
+               
+                </Items>
+            </asp:Menu>
+            </td>
+            <tr>
+            <td style="background-color:#D8D8D8;">
+                <div style="width:40%; float:left; margin-left:25px" align="left">
+                 <asp:Label ID="lblWarehouse" runat="server" style="margin-left:0" 
+                        Font-Names="Arial Black" ForeColor="#669999"></asp:Label>
+                          &nbsp;<asp:Label ID="lblUserName" runat="server" ForeColor="Blue"></asp:Label>
+                </div>
+
+                 <div style="width:42%; float:left; margin-left:50px" align="right">                  
+                <asp:LinkButton ID="lnkBackToPortal"  runat="server" CausesValidation="false"  style="text-decoration:none;"
+                PostBackUrl="https://portal.ecx.com">Back to ecx portal</asp:LinkButton>
+                </div>
+       
+     
+            </td>
+           
+            
+       
+        </tr>
+       
+        <tr >
+          <td style="height:520px;" valign="top" align="left">
+           <!-- <div  style="width:1024px; height:680px; position:fixed; overflow:inherit; text-align:left;" > -->
+              <asp:ContentPlaceHolder ID="ContentPlaceApp" runat="server">
+        
+              </asp:ContentPlaceHolder>
+           <!-- </div> -->
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="font-size:xx-small; height:40px;">
+            Copyright &copy;&nbsp;2009 ECX  All right reserved.
+          </td>
+        </tr>
+      </table>
+    </div>
+      </contenttemplate>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

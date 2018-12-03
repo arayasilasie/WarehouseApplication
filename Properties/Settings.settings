@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WarehouseApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WarehouseApplication_ECXLookUp_ECXLookup" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.20:5000/ecxlookup/ecxlookup.asmx</Value>
+    </Setting>
+    <Setting Name="WarehouseApplication_Membership_MemberShipLookUp" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.20:5000/MembershipLookup/MemberShipLookUp.asmx</Value>
+    </Setting>
+    <Setting Name="WarehouseApplication_ECXWF_ECXEngine" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.20:5001/ECXEngine/ECXEngine.asmx</Value>
+    </Setting>
+    <Setting Name="WarehouseApplication_ecx_server1_ECXSecurityAccess" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.20:5001/ecxsecurity/ecxsecurityaccess.asmx</Value>
+    </Setting>
+    <Setting Name="WarehouseApplication_ECXSecurity_ECXSecurityAccess" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.20:5001/ecxsecurity/ecxsecurityaccess.asmx</Value>
+    </Setting>
+    <Setting Name="WarehouseApplication_Membership_MembershipClientServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.16/MembershipLookup/MemberShipLookUp.asmx</Value>
+    </Setting>
+    <Setting Name="WarehouseApplication_ECXCD_WR" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.1.5.20:5001/CDWebservice/WR.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

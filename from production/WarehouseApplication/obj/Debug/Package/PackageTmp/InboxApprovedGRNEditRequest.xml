@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Inbox>
+  <InboxItem Name="Pending Approval from CD">
+    <TransactionCode FlowName="WHEditAppGRN"  StepName="WHAppGRNEdit" Right="WHAppGRNEd" Step="1"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Open GRN For Edit">
+    <TransactionCode FlowName="WHEditAppGRN"  StepName="OpenGRNForEdit" Right="WHOpenGRNEd" Step="2"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Update and Recreate GRN">
+    <TransactionCode FlowName="WHEditAppGRN" StepName="EditWHR" Right="WHEditAppGRN" Step="3" />
+  </InboxItem>
+
+
+
+  
+</Inbox>

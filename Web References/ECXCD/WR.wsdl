@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="SaveWareHouseReciept">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GRNID" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="GRNNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CommodityGradeId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="WarehouseId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="BagTypeId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="VoucherId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="UnLoadingId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="ScalingId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="GradingId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="SamplingTicketId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="DateDeposited" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="DateApproved" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="GRNStatusId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="GrossWeight" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="NetWeight" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="OriginalQuantity" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="CurrentQuantity" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="DepositeTypeId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="Source" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NetWeightAdjusted" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="CreatedTimeStamp" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumberOfBags" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductionYear" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="GRNTypeId" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveWareHouseRecieptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveWareHouseRecieptResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestWHRCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gRNId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trackingNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestWHRCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestWHRCancelResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestWHREdit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gRNId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestedBy" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trackingNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestWHREditResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateWHREditDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="EditedBy" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="DateEdited" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="EditDetail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWHREditDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateWHREditDetailsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPun">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPunResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPunResult" type="tns:ArrayOfCPickUpNotice" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCPickUpNotice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CPickUpNotice" nillable="true" type="tns:CPickUpNotice" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CPickUpNotice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="WarehouseReciepts" type="tns:ArrayOfCWarehouseReciept" />
+          <s:element minOccurs="0" maxOccurs="1" name="PickupNoticeAgents" type="tns:ArrayOfCPickupNoticeAgent" />
+          <s:element minOccurs="1" maxOccurs="1" name="PickupNoticeId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClientId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="WarehouseId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpirationDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpectedPickupDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CommodityGradeId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductionYear" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Weight" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RepId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MemberId" type="s1:guid" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCWarehouseReciept">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CWarehouseReciept" nillable="true" type="tns:CWarehouseReciept" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CWarehouseReciept">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="PickupNoticeId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="WarehouseRecieptId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GRNID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="GRNNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShedId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="BagType" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Weight" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Bags" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCPickupNoticeAgent">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CPickupNoticeAgent" nillable="true" type="tns:CPickupNoticeAgent" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CPickupNoticeAgent">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="PickupNoticeId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgentName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NIDType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NIDNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgentTel" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AcknowledgePuns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="punIds" type="tns:ArrayOfGuid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGuid">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="guid" type="s1:guid" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AcknowledgePunsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AcknowledgePunsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePUNStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PUNId" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="pUNStatusName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePUNStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePUNStatusResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveGIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Id" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="GINNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PickupNoticeId" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="GrossWeight" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="NetWeight" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="DateIssued" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="SignedByClient" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="DateApproved" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ApprovedBy" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveGINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveGINResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveWareHouseRecieptSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveWareHouseReciept" />
+  </wsdl:message>
+  <wsdl:message name="SaveWareHouseRecieptSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveWareHouseRecieptResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestWHRCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestWHRCancel" />
+  </wsdl:message>
+  <wsdl:message name="RequestWHRCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestWHRCancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestWHREditSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestWHREdit" />
+  </wsdl:message>
+  <wsdl:message name="RequestWHREditSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestWHREditResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWHREditDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWHREditDetails" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWHREditDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWHREditDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPunSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPun" />
+  </wsdl:message>
+  <wsdl:message name="GetPunSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPunResponse" />
+  </wsdl:message>
+  <wsdl:message name="AcknowledgePunsSoapIn">
+    <wsdl:part name="parameters" element="tns:AcknowledgePuns" />
+  </wsdl:message>
+  <wsdl:message name="AcknowledgePunsSoapOut">
+    <wsdl:part name="parameters" element="tns:AcknowledgePunsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePUNStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePUNStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePUNStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePUNStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveGINSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveGIN" />
+  </wsdl:message>
+  <wsdl:message name="SaveGINSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveGINResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WRSoap">
+    <wsdl:operation name="SaveWareHouseReciept">
+      <wsdl:input message="tns:SaveWareHouseRecieptSoapIn" />
+      <wsdl:output message="tns:SaveWareHouseRecieptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestWHRCancel">
+      <wsdl:input message="tns:RequestWHRCancelSoapIn" />
+      <wsdl:output message="tns:RequestWHRCancelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestWHREdit">
+      <wsdl:input message="tns:RequestWHREditSoapIn" />
+      <wsdl:output message="tns:RequestWHREditSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWHREditDetails">
+      <wsdl:input message="tns:UpdateWHREditDetailsSoapIn" />
+      <wsdl:output message="tns:UpdateWHREditDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPun">
+      <wsdl:input message="tns:GetPunSoapIn" />
+      <wsdl:output message="tns:GetPunSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AcknowledgePuns">
+      <wsdl:input message="tns:AcknowledgePunsSoapIn" />
+      <wsdl:output message="tns:AcknowledgePunsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePUNStatus">
+      <wsdl:input message="tns:UpdatePUNStatusSoapIn" />
+      <wsdl:output message="tns:UpdatePUNStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGIN">
+      <wsdl:input message="tns:SaveGINSoapIn" />
+      <wsdl:output message="tns:SaveGINSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WRSoap" type="tns:WRSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveWareHouseReciept">
+      <soap:operation soapAction="http://tempuri.org/SaveWareHouseReciept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestWHRCancel">
+      <soap:operation soapAction="http://tempuri.org/RequestWHRCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestWHREdit">
+      <soap:operation soapAction="http://tempuri.org/RequestWHREdit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWHREditDetails">
+      <soap:operation soapAction="http://tempuri.org/UpdateWHREditDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPun">
+      <soap:operation soapAction="http://tempuri.org/GetPun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcknowledgePuns">
+      <soap:operation soapAction="http://tempuri.org/AcknowledgePuns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePUNStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdatePUNStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGIN">
+      <soap:operation soapAction="http://tempuri.org/SaveGIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WRSoap12" type="tns:WRSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveWareHouseReciept">
+      <soap12:operation soapAction="http://tempuri.org/SaveWareHouseReciept" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestWHRCancel">
+      <soap12:operation soapAction="http://tempuri.org/RequestWHRCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestWHREdit">
+      <soap12:operation soapAction="http://tempuri.org/RequestWHREdit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWHREditDetails">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWHREditDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPun">
+      <soap12:operation soapAction="http://tempuri.org/GetPun" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcknowledgePuns">
+      <soap12:operation soapAction="http://tempuri.org/AcknowledgePuns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePUNStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePUNStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGIN">
+      <soap12:operation soapAction="http://tempuri.org/SaveGIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WR">
+    <wsdl:port name="WRSoap" binding="tns:WRSoap">
+      <soap:address location="http://10.1.5.20:5001/CDWebservice/WR.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WRSoap12" binding="tns:WRSoap12">
+      <soap12:address location="http://10.1.5.20:5001/CDWebservice/WR.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

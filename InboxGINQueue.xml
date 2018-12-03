@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Inbox>
+  <InboxItem Name="Data assistant GIN Approval">
+    <TransactionCode FlowName="WRGINnew"  StepName="GINNewApproval" Right="WHRCDR" Step="1"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Supervisor GIN Approval">
+    <TransactionCode FlowName="WRGINnew"  StepName="GINNew" Right="WHRCDR" Step="1"></TransactionCode>
+  </InboxItem>
+  <!--<InboxItem Name="Register Truck">
+    <TransactionCode FlowName="WRPUN"  StepName="RegisterTrucks" Right="WHPIC" Step="2"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Pre-Weigh Truck">
+    <TransactionCode FlowName="WRGIN"  StepName="GINPreWeighTruck" Right="WHPSO" Step="1"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Load and Record Issuance">
+    <TransactionCode FlowName="WRGIN"  StepName="LoadTruck"  Right="WHPIC" Step="2"></TransactionCode>
+    <TransactionCode FlowName="WRGIN"  StepName="GINPreWeighTruck"  Right="WHPIC" Step="1"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Post-Weigh Truck">
+    <TransactionCode FlowName="WRGIN"  StepName="GINPostWeighTruck" Right="WHPGG" Step="3"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Enter Weight and Print GIN">
+    <TransactionCode FlowName="WRGIN" StepName="GenerateGIN" Right="WHPGG"  Step="4"></TransactionCode>
+    <TransactionCode FlowName="WRGIN"  StepName="GINPostWeighTruck" Right="WHPGG" Step="3"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Record Client Response">
+    <TransactionCode FlowName="WRGIN" StepName="RecordClientResponse" Right="WHPAV"  Step="5"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Approve GIN">
+    <TransactionCode FlowName="WRGIN" StepName="ApproveGIN" Right="WHPWM" Step="6"></TransactionCode>
+  </InboxItem>
+  <InboxItem Name="Truck Left Compound">
+    <TransactionCode FlowName="WRGIN" StepName="LeftCompound" Right="WHPRTLC" Step="7"></TransactionCode>
+  </InboxItem>-->
+</Inbox>

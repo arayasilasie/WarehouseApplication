@@ -1,0 +1,2798 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Pages>
+		<!--PickupNoticeAkcnowledged-->
+		<Page Name="PickupNoticeAkcnowledged">
+			<ViewComponents>
+				<ViewComponent Name="PUNAcknowledgement" Title="Verify Pickup Notice" Key="PUNAcknowledgementId">
+					<Columns>
+						<Column
+						   Name="CommodityGradeId"
+						   Text="CommodityGradeId"
+						   IsLookup="true"
+						   Lookup="CommodityGrade"
+						   IsEditable="false"
+						   Header="Commodity Grade :"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="ProductionYear"
+						   Text="ProductionYear"
+						   IsEditable="false"
+						   Header="Production Year :"
+						   DataType="System.Int32">
+							<ValidationRules>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="Weight"
+							Text="Weight"
+							IsEditable="false"
+							Header="Weight (Kg):"
+							DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Quantity"
+							Text="Quantity"
+							IsEditable="false"
+							Header="Quantity :"
+							DataType="System.Decimal"
+							Format="F4">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="DateReceived"
+							Text="DateReceived"
+							Header="Received On :"
+							IsEditable="true"
+							DataType="System.DateTime"
+							Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PickupNoticeVerifier"
+						   Text="PickupNoticeVerifier"
+						   IsLookup="true"
+						   Lookup="VerifyingClerk"
+						   IsEditable="false"
+						   Header="Verified By :"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="PickupNoticeAgentId"
+						   Text="PickupNoticeAgentId"
+						   IsLookup="true"
+						   Lookup="PUNAgent"
+						   Header="Agent :"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="GradingRequired"
+						   Text="GradingRequired"
+						   Header="Grading Required :"
+						   DataType="System.Boolean"
+						   Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="PickupNoticeAgentVerified"
+							Text="PickupNoticeAgentVerified"
+							Header="PUN Agent Verified :"
+							DataType="System.Boolean"
+							Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--VerifyGINAvailability-->
+		<Page Name="VerifyGINAvailability">
+			<ViewComponents>
+				<ViewComponent Name="PUNAcknowledgement" Title="Confirm Available Commodity" Key="PUNAcknowledgementId">
+					<Columns>
+						<Column
+							Name="DateReceived"
+							Text="DateReceived"
+							Header="Received On :"
+							IsEditable="false"
+							DataType="System.DateTime"
+							Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PickupNoticeAgentId"
+						   Text="PickupNoticeAgentId"
+						   IsLookup="true"
+						   Lookup="PUNAgent"
+						   Header="Agent :"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="CommodityGradeId"
+						   Text="CommodityGradeId"
+						   IsLookup="true"
+						   Lookup="CommodityGrade"
+						   IsEditable="false"
+						   Header="Commodity Grade :"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="ProductionYear"
+						   Text="ProductionYear"
+						   IsEditable="false"
+						   Header="Production Year :"
+						   DataType="System.Int32">
+							<ValidationRules>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="Weight"
+							Text="Weight"
+							IsEditable="false"
+							Header="Required Weight (Kg) :"
+							DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Quantity"
+							Text="Quantity"
+							IsEditable="false"
+							Header="Required Quantity :"
+							DataType="System.Decimal"
+							Format="F4">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="AvailableInventoryWeight"
+							Text="AvailableInventoryBags"
+							Header="Available Quantity (lot) :"
+                            IsEditable="false"
+							DataType="System.Decimal"
+							Format="F4">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="PledgedWeight"
+							Text="PledgedWeight"
+							Header="Planned to Issue (Kg) :"
+							DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Planned to Issue is Requried"/>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThanEqual" RuleDataType="Double" ValueToCompare="0" ErrorMessage="Planned to Issue shall be a positive number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="AvailabilityVerifier"
+						   Text="AvailabilityVerifier"
+						   IsLookup="true"
+						   Lookup="VerifyingClerk"
+						   IsEditable="false"
+						   Header="Confirmed By :"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="AvailabilityVerifiedOn"
+						   Text="AvailabilityVerifiedOn"
+						   IsEditable="true"
+						   Header="Date :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="AvailabilityVerified"
+							Text="AvailabilityVerified"
+							Header="Confirmed :"
+							DataType="System.Boolean"
+							Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--TruckRegistration-->
+		<Page Name="TruckRegistration">
+			<ViewComponents>
+				<ViewComponent Name="PUNAcknowledgement" Title="PUN Status" Key="PUNAcknowledgementId">
+					<Columns>
+						<Column
+							Name="DateReceived"
+							Text="DateReceived"
+							Header="PUN Received :"
+							IsEditable="false"
+							DataType="System.DateTime"
+							Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PickupNoticeAgentId"
+						   Text="PickupNoticeAgentId"
+						   IsLookup="true"
+						   Lookup="PUNAgent"
+						   Header="Agent :"
+						   IsEditable="false"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="CommodityGradeId"
+						   Text="CommodityGradeId"
+						   IsLookup="true"
+						   Lookup="CommodityGrade"
+						   IsEditable="false"
+						   Header="Commodity Grade :"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="ProductionYear"
+						   Text="ProductionYear"
+						   IsEditable="false"
+						   Header="Production Year :"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="IssuedWeight"
+						   Text="IssuedWeight"
+						   IsEditable="false"
+						   Header="Issued (Kg) :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="PledgedWeight"
+							Text="PledgedWeight"
+							Header="Planned to Issue (Kg) :"
+							IsEditable="false"
+							DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="RemainingWeight"
+							Text="RemainingWeight"
+							IsEditable="false"
+							Header="Remained to be Issued (Kg) :"
+							DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="AvailableInventoryWeight"
+							Text="AvailableInventoryBags"
+							Header="Available Quantity (lot) :"
+                            IsEditable="false"
+							DataType="System.Decimal"
+							Format="F4">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="RegisteredTruckGrid" Title="Register Truck" Key="TruckId">
+					<Columns>
+						<Column Name="EditTruck"
+							Key="TruckId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteTruck"
+							Key="TruckId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Driver Name is required"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="LicenseNo"
+						   Text="LicenseNo"
+						   Header="License No.">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="License No is required"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="IssuedBy"
+						   Text="IssuedBy"
+						   Header="Issued By">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No.">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TrailerNo"
+						   Text="TrailerNo"
+						   Header="Trailer Plate No.">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="RegisteredTruck" Title="Driver" Key="TruckId" ValidationGroup="TruckRegistration" SuppressValidationSummary="true">
+					<Columns>
+						<Column
+						   Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver : ">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Driver Name is required"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="LicenseNo"
+						   Text="LicenseNo"
+						   Header="License No. :">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="License No is required"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="IssuedBy"
+						   Text="IssuedBy"
+						   Header="Issued By : ">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Issued By is required"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="TruckData" Title="Truck" Key="TruckRegistrationId" ValidationGroup="TruckRegistration" SuppressValidationSummary="true">
+					<Columns>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No. :"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckTypeId"
+						   Text="TruckTypeId"
+						   Header="Truck Type :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="TruckType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckModelId"
+						   Text="TruckModelId"
+						   Header="Truck Model :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="TruckType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckModelYearId"
+						   Text="TruckModelYearId"
+						   Header="Model Year :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="ModelYear"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="PlateNoChangeExtender"
+						   Text=""
+						   Header=""
+						   IsTextChangeExtender="true"
+						   SubscriberResponse="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="PlateNo" Role="Publisher"/>
+								<ExtendedColumn Name="TruckTypeId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+								<ExtendedColumn Name="TruckModelId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+								<ExtendedColumn Name="TruckModelYearId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckTypeExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckType"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="" Role="Parent"/>
+								<ExtendedColumn Name="TruckTypeId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckModelExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckTypeModels"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="TruckTypeId" Role="Parent"/>
+								<ExtendedColumn Name="TruckModelId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckModelYearExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckTypeModelYears"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="TruckModelId" Role="Parent"/>
+								<ExtendedColumn Name="TruckModelYearId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="TrailerData" Title="Trailer" Key="TruckRegistrationId" ValidationGroup="TruckRegistration"  SuppressValidationSummary="true">
+					<Columns>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Trailer No. :"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TruckTypeId"
+						   Text="TruckTypeId"
+						   Header="Trailer Type :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="TruckType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckModelId"
+						   Text="TruckModelId"
+						   Header="Trailer Model :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="TruckType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckModelYearId"
+						   Text="TruckModelYearId"
+						   Header="Model Year :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="ModelYear"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="PlateNoChangeExtender"
+						   Text=""
+						   Header=""
+						   IsTextChangeExtender="true"
+						   SubscriberResponse="WarehouseApplication.TrailerResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="PlateNo" Role="Publisher"/>
+								<ExtendedColumn Name="TruckTypeId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+								<ExtendedColumn Name="TruckModelId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+								<ExtendedColumn Name="TruckModelYearId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckTypeExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckType"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="" Role="Parent"/>
+								<ExtendedColumn Name="TruckTypeId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckModelExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckTypeModels"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="TruckTypeId" Role="Parent"/>
+								<ExtendedColumn Name="TruckModelId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckModelYearExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckTypeModelYears"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="TruckModelId" Role="Parent"/>
+								<ExtendedColumn Name="TruckModelYearId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--TruckLoading-->
+		<Page Name="TruckLoading">
+			<ViewComponents>
+				<ViewComponent Name="Truck" Title="Truck Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="LicenseNo"
+						   Text="LicenseNo"
+						   Header="License No. :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="IssuedBy"
+						   Text="IssuedBy"
+						   Header="Issued By :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No. :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TrailerNo"
+						   Text="TrailerNo"
+						   Header="Trailer Plate No. :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   IsListable="false"
+						   Header="Remark"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="TruckLoad" Title="Loading Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DateLoaded"
+						   Text="DateLoaded"
+						   Header="Date Loaded :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						  Name="BagType"
+						  Text="BagType"
+						  Header="Bag Type :"
+						  IsLookup="true"
+						  Lookup="BagType"
+						  DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TotalLoad"
+						   Text="TotalLoad"
+						   Header="Total Load :"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark :"
+						   IsListable="false"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="Stack" Title="Loaded From" Key="TruckStackId">
+					<Columns>
+						<Column Name="EditStack"
+							Key="TruckStackId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteStack"
+							Key="TruckStackId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed :"
+						   IsLookup="true"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No. :"
+						   IsCascadedLookup="true"
+						   ParentLookup="Shed"
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetShedStacks"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags :"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="No. of Bags is required"/>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Integer" ValueToCompare="0" ErrorMessage="Bags shall be a positive integer"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="LoadingSupervisor"
+						   Text="LoadingSupervisor"
+						   Header="Loading Supervisor :"
+						   IsLookup="true"
+						   Lookup="Loader"
+						   DataType="System.Guid">
+							<ValidationRules>
+                                <ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+                            </ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="StackGrid" Title="Loaded From" Key="TruckStackId">
+					<Columns>
+						<Column Name="EditStack"
+							Key="TruckStackId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteStack"
+							Key="TruckStackId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="LoadingSupervisor"
+						   Text="LoadingSupervisor"
+						   Header="Loading Supervisor"
+						   IsLookup="true"
+						   Lookup="Loader"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--TruckScaling-->
+		<Page Name="TruckScaling">
+			<ViewComponents>
+				<!--GIN-->
+				<ViewComponent Name="GIN" Title="GIN Information" Key="GINId">
+					<Columns>
+						<Column Name="GINNo"
+							Text="GINNo"
+							IsEditable="false"
+							Header="GIN No. :">
+							<ValidationRules/>
+						</Column>
+						<Column Name="ClientId"
+						   Text="ClientId"
+						   Header="Client :"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Client"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column Name="PickupNoticeAgentId"
+						   Text="PickupNoticeAgentId"
+						   Header="Agent :"
+						   IsLookup="true"
+						   Lookup="PUNAgent"
+						   IsEditable="false"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column Name="CommodityGradeId"
+						   Text="CommodityGradeId"
+						   Header="Commodity Grade :"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="CommodityGrade"
+						   DataType="System.Guid">
+							<ValidationRules>
+							</ValidationRules>
+						</Column>
+						<Column Name="BagType"
+						   Text="BagType"
+						   Header="Bag Type :"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="BagType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags :"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column Name="Loader"
+						   Text="Loader"
+						   Header="Loading Supervisor :"
+						   IsLookup="true"
+						   Lookup="Loader"
+						   IsEditable="false"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver Name :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="LicenseNo"
+						   Text="LicenseNo"
+						   Header="License No :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="IssuedBy"
+						   Text="IssuedBy"
+						   Header="Issued By :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="TrailerNo"
+						   Text="TrailerNo"
+						   Header="Trailer Plate No :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<!--TruckWeight-->
+				<ViewComponent Name="TruckWeight" Title="Scaling Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DateWeighed"
+						   Text="DateWeighed"
+						   Header="Date Weighed :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Date Weighed is required"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="ScaleTicketNo"
+						   Text="ScaleTicketNo"
+						   Header="Scale Ticket No :">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Scale Ticket No is required"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckWeight"
+						   Text="TruckWeight"
+						   Header="Truck Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" ValidationDataType="Double" ValueToCompare="0" ErrorMessage="Truck Weight shall be a positive decimal number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="GrossWeight"
+						   Text="GrossWeight"
+						   Header="Gross Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" ValidationDataType="Double" ValueToCompare="0" ErrorMessage="Truck Weight shall be a positive decimal number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="WeighingSupervisor"
+							Text="WeighingSupervisor"
+							Header="Weighing Supervisor :"
+							IsLookup="true"
+							Lookup="Weigher"
+							DataType="System.Guid">
+								<ValidationRules>
+									<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+								</ValidationRules>
+						</Column>
+						<Column
+						  Name="Remark"
+						  Text="Remark"
+						  Header="Remark :"
+						  IsListable="false"
+						  IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<!--ReturnedBags-->
+				<ViewComponent Name="ReturnedBags" Title="Returned Bags" Key="ReturnedBagsId">
+					<Columns>
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed :"
+						   IsLookup="true"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No. :"
+						   IsCascadedLookup="true"
+						   ParentLookup="Shed"
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetShedStacks"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<!--<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags :"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="No. of Bags is required"/>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Integer" ValueToCompare="0" ErrorMessage="Bags shall be a positive integer"/>
+							</ValidationRules>
+						</Column>-->
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Weight :"
+						   DataType="System.Decimal"
+						   Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Double" ValueToCompare="0.009" ErrorMessage="Weight shall be a positive decimal"/>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="Weight is required"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<!--ReturnedBagsGrid-->
+				<ViewComponent Name="ReturnedBagsGrid" Title="Returned Bags" Key="ReturnedBagsId">
+					<Columns>
+						<Column Name="EditReturnedBags"
+							Key="ReturnedBagsId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteReturnedBags"
+							Key="ReturnedBagsId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<!--<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>-->
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Weight"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<!--AddedBags-->
+				<ViewComponent Name="AddedBags" Title="Added Bags" Key="ReturnedBagsId">
+					<Columns>
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed :"
+						   IsLookup="true"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No. :"
+						   IsCascadedLookup="true"
+						   ParentLookup="Shed"
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetShedStacks"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<!--<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags :"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true" ErrorMessage="No. of Bags is required"/>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Integer" ValueToCompare="0" ErrorMessage="No. of Bags shall be a positive integer"/>
+							</ValidationRules>
+						</Column>-->
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Double" ValueToCompare="0.009" ErrorMessage="Weight shall be a positive decimal"/>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"  ErrorMessage="Weight is required"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<!--AddedBagsGrid-->
+				<ViewComponent Name="AddedBagsGrid" Title="Added Bags" Key="ReturnedBagsId">
+					<Columns>
+						<Column Name="EditAddedBags"
+							Key="ReturnedBagsId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteAddedBags"
+							Key="ReturnedBagsId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<!--<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>-->
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Weight"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<!--GINIssuance-->
+				<ViewComponent Name="GINIssuance" Title="GIN" Key="GINId">
+					<Columns>
+						<Column
+						   Name="DateIssued"
+						   Text="DateIssued"
+						   Header="Date Issued :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--TruckLeftCompound-->
+		<Page Name="TruckLeftCompound">
+			<ViewComponents>
+				<ViewComponent Name="GIN" Title="Truck Checkedout" Key="GINId">
+					<Columns>
+						<Column Name="GINNo"
+							Text="GINNo"
+							IsEditable="false"
+							Header="GIN No. :">
+							<ValidationRules/>
+						</Column>
+						<Column Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver Name :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="TrailerNo"
+						   Text="TrailerNo"
+						   Header="Trailer Plate No :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column Name="TruckCheckedOutBy"
+						   Text="TruckCheckedOutBy"
+						   Header="Truck Checked-out By :"
+						   IsLookup="true"
+						   Lookup="Gatekeeper"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column Name="TruckCheckedOutOn"
+						   Text="TruckCheckedOutOn"
+						   Header="Truck Checked-out On :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--SampleGIN-->
+		<Page Name="SampleGIN">
+			<ViewComponents>
+				<ViewComponent Name="PUNSummary" Title="Pickup Notice Summary" Key="PUNAcknowledgementId">
+					<Columns>
+						<Column
+							Name="DateReceived"
+							Text="DateReceived"
+							IsEditable="false"
+							Header="Received On"
+							DataType="System.DateTime">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="CommodityGradeId"
+						   Text="CommodityGradeId"
+						   IsLookup="true"
+						   Lookup="CommodityGrade"
+						   IsEditable="false"
+						   Header="Commodity"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="ProductionYear"
+						   Text="ProductionYear"
+						   IsEditable="false"
+						   Header="Production Year :"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PickupNoticeAgentId"
+						   Text="PickupNoticeAgentId"
+						   IsLookup="true"
+						   Lookup="PUNAgent"
+						   IsEditable="false"
+						   Header="Agent"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="PickupNoticeVerifier"
+						   Text="PickupNoticeVerifier"
+						   IsLookup="true"
+						   Lookup="VerifyingClerk"
+						   IsEditable="false"
+						   Header="Verified By"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="PickupNoticeAgentVerifiedOn"
+							Text="PickupNoticeAgentVerifiedOn"
+							IsEditable="false"
+							Header="Verified On"
+							DataType="System.DateTime">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Weight"
+							Text="Weight"
+							IsEditable="false"
+							Header="Weight"
+							DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Quantity"
+							Text="Quantity"
+							IsEditable="false"
+							Header="Quantity"
+							DataType="System.Decimal"
+							Format="F4">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="TransactionId"
+							Text="TransactionId"
+							IsEditable="false"
+							Header="Transaction"
+							DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column Name="Status"
+							Text="Status"
+							IsLookup="true"
+							Lookup="Status"
+							IsEditable="false"
+							Header="Status"
+							DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="Sample" Title="Sample" Key="Id">
+					<Columns>
+						<Column Name="Samplers"
+							Key="Id"
+							Text="Samplers"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column Name="Results"
+							Key="Id"
+							Text="Results"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column Name="EditSample"
+							Key="Id"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteSample"
+							Key="Id"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="SerialNo"
+						   Text="SerialNo"
+						   Header="Serial No."
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="GeneratedDate"
+						   Text="GeneratedDate"
+						   Header="Date Generated"
+						   IsEditable="false"
+						   DataType="System.DateTime"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="SamplingCode"
+						   Text="SamplingCode"
+						   Header="Sampling Code"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Status"
+						   Text="Status"
+						   IsLookup="true"
+						   Lookup="SamplingStatus"
+						   Header="Status"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--GINSamplers-->
+		<Page Name="GINSamplers">
+			<ViewComponents>
+				<ViewComponent Name="Sample" Title="Sample" Key="Id">
+					<Columns>
+						<Column
+						   Name="SerialNo"
+						   Text="SerialNo"
+						   Header="Serial No."
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="GeneratedDate"
+						   Text="GeneratedDate"
+						   Header="Date Generated"
+						   IsEditable="false"
+						   DataType="System.DateTime"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="SamplingCode"
+						   Text="SamplingCode"
+						   Header="Sampling Code"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark"
+						   IsEditable="false"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Status"
+						   Text="Status"
+						   IsLookup="true"
+						   Lookup="SamplingStatus"
+						   Header="Status"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="Sampler" Title="Sampler Data" Key="Id">
+					<Columns>
+						<Column Name="EditSampler"
+							Key="Id"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteSampler"
+							Key="Id"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Sampler"
+						   Text="WorkerId"
+						   Header="Name"
+						   IsLookup="true"
+						   Lookup="Sampler"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="IsSupervisor"
+						   Text="IsSupervisor"
+						   Header="Super"
+						   DataType="System.Boolean"
+						   Renderer="CheckBoxGINColumnRenderer" >
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Status"
+							Text="Status"
+							Header="Status"
+							IsLookup="true"
+							Lookup="WorkerStatus"
+							IsListable="false">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   IsListable="false"
+						   Header="Remark"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--GINSamplingResults-->
+		<Page Name="GINSamplingResults">
+			<ViewComponents>
+				<ViewComponent Name="Sample" Title="Sample" Key="Id">
+					<Columns>
+						<Column
+						   Name="SerialNo"
+						   Text="SerialNo"
+						   Header="Serial No."
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="GeneratedDate"
+						   Text="GeneratedDate"
+						   Header="Date Generated"
+						   IsEditable="false"
+						   DataType="System.DateTime"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="SamplingCode"
+						   Text="SamplingCode"
+						   Header="Sampling Code"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark"
+						   IsEditable="false"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Status"
+						   Text="Status"
+						   IsLookup="true"
+						   Lookup="SamplingStatus"
+						   Header="Status"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="Sampler" Title="Sampler Data" Key="Id">
+					<Columns>
+						<Column Name="ShowResult"
+							Key="Id"
+							Text="Result"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Sampler"
+						   Text="WorkerId"
+						   Header="Name"
+						   IsLookup="true"
+						   Lookup="Sampler"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="IsSupervisor"
+						   Text="IsSupervisor"
+						   Header="Super"
+						   DataType="System.Boolean"
+						   Renderer="CheckBoxGINColumnRenderer" >
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Status"
+							Text="Status"
+							Header="Status"
+							IsLookup="true"
+							Lookup="WorkerStatus"
+							IsListable="false">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   IsListable="false"
+						   Header="Remark"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="SamplingResult" Title="Sampling Result" Key="Id">
+					<Columns>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="Bags"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThanEqual" ValidationDataType="Integer" ValueToCompare="0" ErrorMessage="Bags shall be a non-negative integer"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Separations"
+						   Text="Separations"
+						   Header="Separations"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThanEqual" ValidationDataType="Integer" ValueToCompare="0" ErrorMessage="Separations shall be a non-negative integer"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Comment"
+						   Text="Comment"
+						   Header="Coment"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="Status"
+							Text="Status"
+							Header="Status"
+							IsLookup="true"
+							Lookup="SamplingResultStatus">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Status"
+						   Text="Status"
+						   IsLookup="true"
+						   Lookup="SamplingStatus"
+						   Header="Status"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--ClientAcknowledgeGIN -->
+		<Page Name="ClientAcknowledgeGIN">
+			<ViewComponents>
+				<!--GIN-->
+				<ViewComponent Name="GIN" Title="GIN Information" Key="GINId">
+					<Columns>
+						<Column
+						   Name="GINNo"
+						   Text="GINNo"
+						   Header="GIN No. :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="DateIssued"
+						   Text="DateIssued"
+						   Header="Date Issued :"
+						   DataType="System.DateTime"
+						   IsEditable="false"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="SignedByClient"
+						   Text="SignedByClient"
+						   Header="Client Signature :"
+						   DataType="System.Boolean"
+						   Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--ApproveGIN -->
+		<Page Name="ApproveGIN">
+			<ViewComponents>
+				<!--GIN-->
+				<ViewComponent Name="GIN" Title="GIN Information" Key="GINId">
+					<Columns>
+						<Column
+						   Name="GINNo"
+						   Text="GINNo"
+						   Header="GIN No. :"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="DateIssued"
+						   Text="DateIssued"
+						   Header="Date Issued :"
+						   DataType="System.DateTime"
+						   IsEditable="false"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="SignedByClient"
+						   Text="SignedByClient"
+						   Header="Client Signature :"
+						   DataType="System.Boolean"
+						   IsEditable="false"
+						   Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="DateApproved"
+						   Text="DateApproved"
+						   Header="Date Approved :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="ApprovedBy"
+						   Text="ApprovedBy"
+						   IsLookup="true"
+						   Lookup="WarehouseManager"
+						   Header="Approved By :"
+						   IsEditable="false"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--EditTruckInformation-->
+		<Page Name="EditTruckInformation">
+			<ViewComponents>
+				<ViewComponent Name="Truck" Title="Truck Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="LicenseNo"
+						   Text="LicenseNo"
+						   Header="License No. :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="IssuedBy"
+						   Text="IssuedBy"
+						   Header="Issued By :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No. :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TrailerNo"
+						   Text="TrailerNo"
+						   Header="Trailer Plate No. :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark :"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--EditTruckLoading-->
+		<Page Name="EditTruckLoading">
+			<ViewComponents>
+				<ViewComponent Name="TruckLoad" Title="Loading Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DateLoaded"
+						   Text="DateLoaded"
+						   Header="Date Loaded :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						  Name="BagType"
+						  Text="BagType"
+						  Header="Bag Type :"
+						  IsLookup="true"
+						  Lookup="BagType"
+						  DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TotalLoad"
+						   Text="TotalLoad"
+						   Header="Total Load :"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark :"
+						   IsListable="false"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="Stack" Title="Loaded From" Key="TruckStackId">
+					<Columns>
+						<Column Name="EditStack"
+							Key="TruckStackId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteStack"
+							Key="TruckStackId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed :"
+						   IsLookup="true"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No. :"
+						   IsCascadedLookup="true"
+						   ParentLookup="Shed"
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetShedStacks"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags :"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Integer" ValueToCompare="0" ErrorMessage="Bags shall be a positive integer"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="LoadingSupervisor"
+						   Text="LoadingSupervisor"
+						   Header="Loading Supervisor :"
+						   IsLookup="true"
+						   Lookup="Loader"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="StackGrid" Title="Loaded From" Key="TruckStackId">
+					<Columns>
+						<Column Name="EditStack"
+							Key="TruckStackId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteStack"
+							Key="TruckStackId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="LoadingSupervisor"
+						   Text="LoadingSupervisor"
+						   Header="Loading Supervisor"
+						   IsLookup="true"
+						   Lookup="Loader"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--EditTruckScaling-->
+		<Page Name="EditTruckScaling">
+			<ViewComponents>
+				<!--TruckWeight-->
+				<ViewComponent Name="TruckWeight" Title="Scaling Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DateWeighed"
+						   Text="DateWeighed"
+						   Header="Date Weighed :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="ScaleTicketNo"
+						   Text="ScaleTicketNo"
+						   Header="Scale Ticket No :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TruckWeight"
+						   Text="TruckWeight"
+						   Header="Truck Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" ValidationDataType="Double" ValueToCompare="0" ErrorMessage="Truck Weight shall be a positive decimal number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="GrossWeight"
+						   Text="GrossWeight"
+						   Header="Gross Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" ValidationDataType="Double" ValueToCompare="0" ErrorMessage="Truck Weight shall be a positive decimal number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="WeighingSupervisor"
+							Text="WeighingSupervisor"
+							Header="Weighing Supervisor :"
+							IsLookup="true"
+							Lookup="Weigher"
+							DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						  Name="Remark"
+						  Text="Remark"
+						  Header="Remark :"
+						  IsListable="false"
+						  IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="ReturnedBags" Title="ReturnedBags" Key="ReturnedBagsId">
+					<Columns>
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed :"
+						   IsLookup="true"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No. :"
+						   IsCascadedLookup="true"
+						   ParentLookup="Shed"
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetShedStacks"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags :"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" RuleDataType="Integer" ValueToCompare="0" ErrorMessage="Bags shall be a positive integer"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="ReturnedBagsGrid" Title="Returned Bags" Key="ReturnedBagsId">
+					<Columns>
+						<Column Name="EditReturnedBags"
+							Key="ReturnedBagsId"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<!--Column Name="DeleteReturnedBags"
+							Key="ReturnedBagsId"
+							Text="Delete"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							DataType="System.Guid"
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column-->
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Weight"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--ApproveGINEditRequest-->
+		<Page Name="ApproveGINEditRequest">
+			<ViewComponents>
+				<ViewComponent Name="Truck" Title="Truck Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DriverName"
+						   Text="DriverName"
+						   Header="Driver :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="LicenseNo"
+						   Text="LicenseNo"
+						   Header="License No. :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="IssuedBy"
+						   Text="IssuedBy"
+						   Header="Issued By :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No. :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TrailerNo"
+						   Text="TrailerNo"
+						   Header="Trailer Plate No. :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark :"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="TruckLoad" Title="Loading Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DateLoaded"
+						   Text="DateLoaded"
+						   Header="Date Loaded :"
+						   DataType="System.DateTime"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						  Name="BagType"
+						  Text="BagType"
+						  Header="Bag Type :"
+						  IsLookup="true"
+						  Lookup="BagType"
+						  DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TotalLoad"
+						   Text="TotalLoad"
+						   Header="Total Load :"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Remark"
+						   Text="Remark"
+						   Header="Remark :"
+						   IsListable="false"
+						   IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="StackGrid" Title="Loaded From" Key="TruckStackId">
+					<Columns>
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="LoadingSupervisor"
+						   Text="LoadingSupervisor"
+						   Header="Loading Supervisor"
+						   IsLookup="true"
+						   Lookup="Loader"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="TruckWeight" Title="Scaling Information" Key="TruckId">
+					<Columns>
+						<Column
+						   Name="DateWeighed"
+						   Text="DateWeighed"
+						   Header="Date Weighed :"
+						   DataType="System.DateTime"
+						   Renderer="DateTimeGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="ScaleTicketNo"
+						   Text="ScaleTicketNo"
+						   Header="Scale Ticket No :">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="TruckWeight"
+						   Text="TruckWeight"
+						   Header="Truck Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" ValidationDataType="Double" ValueToCompare="0" ErrorMessage="Truck Weight shall be a positive decimal number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="GrossWeight"
+						   Text="GrossWeight"
+						   Header="Gross Weight :"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules>
+								<ValidationRule xsi:type="CompareValidationRule" CompareOperator="GreaterThan" ValidationDataType="Double" ValueToCompare="0" ErrorMessage="Truck Weight shall be a positive decimal number"/>
+							</ValidationRules>
+						</Column>
+						<Column
+							Name="WeighingSupervisor"
+							Text="WeighingSupervisor"
+							Header="Weighing Supervisor :"
+							IsLookup="true"
+							Lookup="Weigher"
+							DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						  Name="Remark"
+						  Text="Remark"
+						  Header="Remark :"
+						  IsListable="false"
+						  IsLongText="true">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="ReturnedBagsGrid" Title="Returned Bags" Key="ReturnedBagsId">
+					<Columns>
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No."
+						   IsLookup="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Bags"
+						   Text="Bags"
+						   Header="No. of Bags"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Size"
+						   Text="Size"
+						   Header="Size"
+						   DataType="System.Decimal"
+							Format="F2">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<Page Name="TestCDD">
+			<ViewComponents>
+				<ViewComponent Name="ReturnedBags" Title="ReturnedBags" Key="ReturnedBagsId">
+					<Columns>
+						<Column
+						   Name="Shed"
+						   Text="Shed"
+						   Header="Shed :"
+						   IsLookup="true"
+						   Lookup="Shed"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Stack"
+						   Text="StackId"
+						   Header="Stack No. :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="StackExtender"
+						   Text=""
+						   Header=""
+						   IsCDDExtender="true"
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetShedStacks">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="Shed" Role="Parent"/>
+								<ExtendedColumn Name="Stack" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<Page Name="TestPage">
+			<ViewComponents>
+				<ViewComponent Name="TestTextChange" Title="ReturnedBags" Key="ReturnedBagsId">
+					<Columns>
+						<Column
+						   Name="PlateNo"
+						   Text="PlateNo"
+						   Header="Plate No. :"
+						   DataType="System.String">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckTypeId"
+						   Text="TruckTypeId"
+						   Header="Truck Type :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="TruckType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckModelId"
+						   Text="TruckModelId"
+						   Header="Truck Model :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="TruckType"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="TruckModelYearId"
+						   Text="TruckModelYearId"
+						   Header="Model Year :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="ModelYear"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="PlateNoChangeExtender"
+						   Text=""
+						   Header=""
+						   IsTextChangeExtender="true"
+						   SubscriberResponse="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="PlateNo" Role="Publisher"/>
+								<ExtendedColumn Name="TruckTypeId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+								<ExtendedColumn Name="TruckModelId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+								<ExtendedColumn Name="TruckModelYearId" Role="Subscriber" Response="WarehouseApplication.TruckResponse, WarehouseApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckTypeExtender"
+						   Text=""
+						   Header="" 
+						   ServicePath="~/CDDTrackRegistration.asmx" 
+						   ServiceMethod="GetTruckType"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="" Role="Parent"/>
+								<ExtendedColumn Name="TruckTypeId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckModelExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx"
+						   ServiceMethod="GetTruckTypeModels"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="TruckTypeId" Role="Parent"/>
+								<ExtendedColumn Name="TruckModelId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDTruckModelYearExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/CDDTrackRegistration.asmx" 
+						   ServiceMethod="GetTruckTypeModelYears"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="TruckModelId" Role="Parent"/>
+								<ExtendedColumn Name="TruckModelYearId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+		<!--TakePhysicalCount-->
+		<Page Name="TakePhysicalCount">
+			<ViewComponents>
+				<ViewComponent Name="PhysicalCount" Title="Physical Count Information" Key="Id">
+					<Columns>
+						<Column
+						   Name="PhysicalCountDate"
+						   Text="PhysicalCountDate"
+						   Header="Physical Count Date :"
+						   DataType="System.DateTime"
+						   Renderer="DateAndTimeGINColumnRenderer">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="InspectorGrid" Title="Inspectors" Key="Id">
+					<Columns>
+						<Column Name="EditInspector"
+							Key="Id"
+							Text="Edit"
+							IsCommand="true"
+							IsListable="true"
+							IsViewable="false"
+							IsEditable="false"
+							IsStatic="true"
+							Header=""
+							Renderer="LinkGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="Inspector"
+						   Text="UserId"
+						   Header="Inventory Counter"
+						   IsLookup="true"
+						   IsEditable="false"
+						   Lookup="Inspector"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="IsSupervisor"
+						   Text="IsSupervisor"
+						   Header="Supervisor?"
+						   IsEditable="false"
+						   DataType="System.Boolean"
+						   Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules>
+							</ValidationRules>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="Inspector" Title="Inventory Counter" Key="Id">
+					<Columns>
+						<Column
+						   Name="Inspector"
+						   Text="UserId"
+						   Header="Inventory Counter :"
+						   IsLookup="true"
+						   Lookup="Inspector"
+						   DataType="System.Guid">
+							<ValidationRules/>
+						</Column>
+						<Column
+							Name="IsSupervisor"
+							Text="IsSupervisor"
+							Header="Is Supervisor? :"
+							DataType="System.Boolean"
+							Renderer="CheckBoxGINColumnRenderer">
+							<ValidationRules/>
+						</Column>
+					</Columns>
+				</ViewComponent>
+				<ViewComponent Name="StackCount" Title="Stack Count" Key="Id" ValidationGroup="StackCount">
+					<Columns>
+						<Column
+						   Name="ShedId"
+						   Text="ShedId"
+						   Header="Shed :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   ParentLookup="WarehouseId"
+						   Lookup="Shed"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="StackId"
+						   Text="StackId"
+						   Header="Stack :"
+						   IsLookup="true"
+						   IsCDDExtended="true"
+						   Lookup="Stack"
+						   DataType="System.Guid">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="Balance"
+						   Text="Balance"
+						   Header="Physical Count :"
+						   DataType="System.Int32">
+							<ValidationRules>
+								<ValidationRule xsi:type="RequiredValidationRule" IsRequired="true"/>
+							</ValidationRules>
+						</Column>
+						<Column
+						   Name="ExpectedBalance"
+						   Text="ExpectedBalance"
+						   Header="Count (System) :"
+						   DataType="System.Int32"
+						   IsEditable="false">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="CummulatedShortage"
+						   Text="CummulatedShortage"
+						   Header="cumulated Shortage :"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="CumulatedOverage"
+						   Text="CumulatedOverage"
+						   Header="Cumulated Overage :"
+						   IsEditable="false"
+						   DataType="System.Int32">
+							<ValidationRules/>
+						</Column>
+						<Column
+						   Name="CDDShedExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetSheds"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="" Role="Parent" UseContextKey="true" ContextKeyLookup="CurrentWarehouse" ContextKeyName="Id"/>
+								<ExtendedColumn Name="ShedId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+						<Column
+						   Name="CDDStackExtender"
+						   Text=""
+						   Header=""
+						   ServicePath="~/StackCDDService.asmx"
+						   ServiceMethod="GetAllShedStacks"
+						   IsCDDExtender="true">
+							<ValidationRules/>
+							<ExtendedColumns>
+								<ExtendedColumn Name="ShedId" Role="Parent"/>
+								<ExtendedColumn Name="StackId" Role="Child"/>
+							</ExtendedColumns>
+						</Column>
+					</Columns>
+				</ViewComponent>
+			</ViewComponents>
+		</Page>
+	</Pages>
+</ApplicationView>
+<!--
+            <Column Name="Age"
+                Key="PUNAcknowledgementId"
+                Row="0"
+                Text="Age"
+                Lookup=""
+                IsLookup="false"
+                Class="NarrowColumn"
+                IsListable="true"
+                IsViewable="true"
+                IsEditable="true"
+                IsStatic="false"
+                Header="Age"
+                DataType="System.Int32">
+              <ValidationRules>
+                <ValidationRule xsi:type="RangeValidationRule" LeftBoundary="18" RightBoundary="55"/>
+                <ValidationRule xsi:type="CompareValidationRule" CompareOperator="NotEqual" ValidationDataType="Integer" ValueToCompare="18"/>
+              </ValidationRules>
+            </Column>
+            -->

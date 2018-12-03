@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pUtility.master.cs" Inherits="WarehouseApplication.pUtility" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>ECX Master Page</title>
+    <link type="text/css" rel="Shortcut Icon" href="Images/logo.ico">   
+    <style type="text/css">
+     .Banner
+     {
+        background-image: url('/Images/Banner.jpg');
+        height:100px;
+        width:1000px; 
+        text-align:center;
+     }
+    </style>
+    <link href="warehouse.css" rel="stylesheet" type="text/css" />
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body  style=" background-color:#96b55c;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table width="100%">
+      <tr>
+        <td align="center">
+          <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+      <ContentTemplate>
+    <div style=" width:1024px; height:1000px; background-color:#e4efd0; font-family:Verdana; border-style:solid; border-width:1px; border-color:Black; ">
+      <table>
+        <tr style="height:100px; vertical-align:top;">
+          <td>
+            <table border="0">
+              <tr>
+                <td>
+                  <div class="Banner">
+                    
+                      <img alt="" src="Images/NewHeaderLook.png" style="width: 1000px; height: 100px" /></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="lblErrorMessage" runat="server" CssClass="Message" Text="" Visible="false"></asp:Label></td>
+        </tr>
+        <tr >
+          <td style="height:520px;" valign="top" align="left">
+           <!-- <div  style="width:1024px; height:680px; position:fixed; overflow:inherit; text-align:left;" > -->
+              <asp:ContentPlaceHolder ID="ContentPlaceApp" runat="server">
+        
+              </asp:ContentPlaceHolder>
+           <!-- </div> -->
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="font-size:xx-small; height:40px;">
+            Copyright &copy;&nbsp;2009 ECX  All right reserved.
+          </td>
+        </tr>
+      </table>
+    </div>
+      </ContentTemplate>
+    </asp:UpdatePanel>    
+        </td>
+      </tr>
+    </table>
+    
+    </form>
+</body>
+</html>
